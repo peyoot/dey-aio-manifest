@@ -16,10 +16,10 @@
   <remote name="peyoot"  fetch="https://github.com/peyoot"/>
 
   <project name="meta-digi.git" path="dey4.0/sources/meta-digi" remote="digi" revision="kirkstone">
-    <copyfile src="sdk/mkproject.sh" dest="dey4.0/mkproject.sh"/>
   </project>
   <project name="dey-aio.git" path="." remote="peyoot" revision="main">
-    <linkfile src="meta-custom" dest="dey4.0/sources/meta-digi/meta-custom"/>
+    <linkfile src="meta-custom" dest="dey4.0/sources/meta-custom"/>
+    <linkfile src="tools/mkproject.sh" dest="dey4.0/mkproject.sh"/>
   </project>
   <project name="meta-freescale.git" path="dey4.0/sources/meta-freescale" remote="yocto" revision="kirkstone"/>
   <project name="meta-fsl-demos.git" path="dey4.0/sources/meta-fsl-demos" remote="fsl" revision="kirkstone"/>
