@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <default sync-j="8" revision="kirkstone"/>
+  <remote name="digi-embedded" fetch="https://github.com/digi-embedded"/>
   <remote name="peyoot"  fetch="https://github.com/peyoot"/>
 
   <project name="dey-aio.git" path="." remote="peyoot" revision="main">
     <linkfile src="meta-custom" dest="dey4.0/sources/meta-digi/meta-custom"/>
   </project>
+  <project name="dey-manifest.git" path="dey4.0" remote="digi-emedded" revision="kirtstone">
+    <include name="default.xml"/>
 </manifest>
