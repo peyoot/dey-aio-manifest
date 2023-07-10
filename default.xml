@@ -8,5 +8,5 @@
     <linkfile src="meta-custom" dest="dey4.0/sources/meta-digi/meta-custom"/>
   </project>
   <project name="dey-manifest.git" path="dey4.0" remote="digi-emedded" revision="kirtstone">
-    <include name="default.xml"/>
+    <include url="https://github.com/digi-embedded/manifest.git"/>
 </manifest>
