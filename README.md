@@ -1,5 +1,6 @@
 # dey-aio-manifest
 This repository contains the manifest files for the dey-aio for Digi's Embedded modules.
+**[[中文说明]](README-cn.md)**
 
 # Installing Digi Embedded Yocto All In One (dey-aio)
 ### use native DEY 
@@ -16,8 +17,13 @@ sudo chown $USER:USER /usr/local/bin/repo
 </pre>
 
 Use repo to download dey-aio, it will also set up native Digi Embedded Yocto
-$ repo init -u https://github.com/peyoot/dey-aio-manifest.git -b kirkstone
-$ repo sync -j8 --no-repo-verify
+<pre>
+mkdir ~/dey-aio
+cd ~/dey-aio
+repo init -u https://github.com/peyoot/dey-aio-manifest.git -b kirkstone
+repo sync -j8 --no-repo-verify
+</pre>
+Now you can use the publish tools and meta-custom layer of dey-aio while refer to the native documents of Digi Embedded Yocto
 
 ### use DEY in docker container way
 To use DEY container you'll need to install docker and docker compose first.
