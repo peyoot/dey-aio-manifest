@@ -13,7 +13,7 @@ To download dey-aio, you need the repo tool.
 <pre>
 sudo curl -o /usr/local/bin/repo http://commondatastorage.googleapis.com/git-repo-downloads/repo
 sudo chmod a+x /usr/local/bin/repo
-sudo chown $USER:USER /usr/local/bin/repo
+sudo chown $USER:$USER /usr/local/bin/repo
 </pre>
 
 Use repo to download dey-aio, it will also set up native Digi Embedded Yocto
