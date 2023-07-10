@@ -23,7 +23,16 @@ cd ~/dey-aio
 repo init -u https://github.com/peyoot/dey-aio-manifest.git -b kirkstone
 repo sync -j8 --no-repo-verify
 </pre>
-Now you can use the publish tools and meta-custom layer of dey-aio while refer to the native documents of Digi Embedded Yocto
+Now you can use the publish tools and meta-custom layer of dey-aio while refer to the native documents of Digi Embedded Yocto.
+To create a new project, go to workspace as bellow:
+<pre>
+  cd dey4.0/workspace
+  mkdir mycc93
+  cd mycc93
+  source ../../mkproject.sh -l
+  source ../../mkproject.sh -p ccimx93-dvk
+  ...
+</pre>
 
 ### use DEY in docker container way
 To use DEY container you'll need to install docker and docker compose first.
