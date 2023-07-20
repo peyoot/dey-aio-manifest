@@ -15,21 +15,7 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org"/>
   <remote name="peyoot"  fetch="https://github.com/peyoot"/>
 
-  <project name="meta-digi.git" path="dey4.0/sources/meta-digi" remote="digi" revision="kirkstone">
-  </project>
-  <project name="dey-aio.git" path="." remote="peyoot" revision="main">
-    <linkfile src="meta-custom" dest="dey4.0/sources/meta-custom"/>
-    <linkfile src="tools/mkproject.sh" dest="dey4.0/mkproject.sh"/>
-  </project>
-
-
-  <project name="meta-digi.git" path="dey3.2/sources/meta-digi" remote="digi" revision="gatesgarth">
-  </project>
-  <project name="dey-aio.git" path="." remote="peyoot" revision="gatesgarth">
-    <linkfile src="meta-custom" dest="dey3.2/sources/meta-custom"/>
-    <linkfile src="tools/mkproject.sh" dest="dey3.2/mkproject.sh"/>
-  </project>
-
+  <project name="meta-digi.git" path="dey4.0/sources/meta-digi" remote="digi" revision="kirkstone"/>
   <project name="meta-freescale.git" path="dey4.0/sources/meta-freescale" remote="yocto" revision="kirkstone"/>
   <project name="meta-fsl-demos.git" path="dey4.0/sources/meta-fsl-demos" remote="fsl" revision="kirkstone"/>
   <project name="meta-imx.git" path="dey4.0/sources/meta-imx" remote="nxp" revision="kirkstone-5.15.71-2.2.0"/>
@@ -45,6 +31,8 @@
   <project name="meta-wolfssl.git" path="dey4.0/sources/meta-wolfssl" remote="wlf" revision="kirkstone"/>
   <project name="poky.git" path="dey4.0/sources/poky" remote="yocto" revision="kirkstone"/>
 
+
+  <project name="meta-digi.git" path="dey3.2/sources/meta-digi" remote="digi" revision="gatesgarth"/>
   <project name="meta-digi-dualboot.git" path="dey3.2/sources/meta-digi-dualboot" remote="digi" revision="gatesgarth"/>
   <project name="meta-freescale.git" path="dey3.2/sources/meta-freescale" remote="yocto" revision="gatesgarth"/>
   <project name="meta-fsl-demos.git" path="dey3.2/sources/meta-fsl-demos" remote="fsl" revision="gatesgarth"/>
@@ -57,5 +45,25 @@
   <project name="meta-timesys.git" path="dey3.2/sources/meta-timesys" remote="timesys" revision="gatesgarth"/>
   <project name="meta-webkit.git" path="dey3.2/sources/meta-webkit" remote="igl" revision="gatesgarth"/>
   <project name="poky.git" path="dey3.2/sources/poky" remote="yocto" revision="gatesgarth"/>
+
+
+
+
+
+  <project name="dey-aio.git" path="dey-aio/kirkstone" remote="peyoot" revision="main">
+    <linkfile src="dey-aio/kirkstone/meta-custom" dest="dey4.0/sources/meta-custom"/>
+    <linkfile src="dey-aio/kirkstone/tools/mkproject.sh" dest="dey4.0/mkproject.sh"/>
+  </project>
+
+
+
+  <project name="dey-aio.git" path="dey-aio/gatesgarth" remote="peyoot" revision="gatesgarth">
+    <linkfile src="dey-aio/gatesgarth/meta-custom" dest="dey3.2/sources/meta-custom"/>
+    <linkfile src="dey-aio/gatesgarth/tools/mkproject.sh" dest="dey3.2/mkproject.sh"/>
+  </project>
+
+
+
+
 
 </manifest>
