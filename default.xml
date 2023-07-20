@@ -46,8 +46,8 @@
   <project name="meta-webkit.git" path="dey3.2/sources/meta-webkit" remote="igl" revision="gatesgarth"/>
   <project name="poky.git" path="dey3.2/sources/poky" remote="yocto" revision="gatesgarth"/>
 
-  <project name="dey-aio.git" path="aio/kirkstone" remote="peyoot" revision="main">
-    <linkfile src="meta-custom" dest="dey4.0/sources/meta-custom"/>
+  <project name="dey-aio.git" path="aio/kirkstone" remote="peyoot" revision="kirkstone">
+    <linkfile src="sources/meta-custom" dest="dey4.0/sources/meta-custom"/>
     <linkfile src="tools/mkproject.sh" dest="dey4.0/mkproject.sh"/>
     <linkfile src="dey4.0/docker-compose.yml" dest="dey4.0/docker-compose.yml"/>
     <copyfile src="dey4.0/workspace/.gitignore" dest="dey4.0/workspace/.gitignore"/>
@@ -55,7 +55,7 @@
   </project>
 
   <project name="dey-aio.git" path="aio/gatesgarth" remote="peyoot" revision="gatesgarth">
-    <linkfile src="meta-custom" dest="dey3.2/sources/meta-custom"/>
+    <linkfile src="sources/meta-custom" dest="dey3.2/sources/meta-custom"/>
     <linkfile src="tools/mkproject.sh" dest="dey3.2/mkproject.sh"/>
     <linkfile src="dey3.2/docker-compose.yml" dest="dey3.2/docker-compose.yml"/>
     <copyfile src="dey3.2/workspace/.gitignore" dest="dey3.2/workspace/.gitignore"/>
