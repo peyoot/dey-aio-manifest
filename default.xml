@@ -49,16 +49,16 @@
   <project name="dey-aio.git" path="aio/kirkstone" remote="peyoot" revision="main">
     <linkfile src="meta-custom" dest="dey4.0/sources/meta-custom"/>
     <linkfile src="tools/mkproject.sh" dest="dey4.0/mkproject.sh"/>
-    <linkfile src="docker-compose.yml" dest="dey4.0/docker-compose.yml"/>
-    <linkfile src="workspace" dest="dey4.0/workspace"/>
+    <linkfile src="dey4.0/docker-compose.yml" dest="dey4.0/docker-compose.yml"/>
+    <linkfile src="dey4.0/workspace" dest="dey4.0/workspace"/>
 
   </project>
 
   <project name="dey-aio.git" path="aio/gatesgarth" remote="peyoot" revision="gatesgarth">
     <linkfile src="meta-custom" dest="dey3.2/sources/meta-custom"/>
     <linkfile src="tools/mkproject.sh" dest="dey3.2/mkproject.sh"/>
-    <linkfile src="docker-compose.yml" dest="dey3.2/docker-compose.yml"/>
-    <linkfile src="workspace" dest="dey3.2/workspace"/>
+    <linkfile src="dey3.2/docker-compose.yml" dest="dey3.2/docker-compose.yml"/>
+    <linkfile src="dey3.2/workspace" dest="dey3.2/workspace"/>
   </project>
 
 </manifest>
