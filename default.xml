@@ -50,7 +50,7 @@
     <linkfile src="meta-custom" dest="dey4.0/sources/meta-custom"/>
     <linkfile src="tools/mkproject.sh" dest="dey4.0/mkproject.sh"/>
     <linkfile src="dey4.0/docker-compose.yml" dest="dey4.0/docker-compose.yml"/>
-    <linkfile src="dey4.0/workspace" dest="dey4.0/workspace"/>
+    <copyfile src="dey4.0/workspace/.gitignore" dest="dey4.0/workspace/.gitignore"/>
 
   </project>
 
@@ -58,7 +58,7 @@
     <linkfile src="meta-custom" dest="dey3.2/sources/meta-custom"/>
     <linkfile src="tools/mkproject.sh" dest="dey3.2/mkproject.sh"/>
     <linkfile src="dey3.2/docker-compose.yml" dest="dey3.2/docker-compose.yml"/>
-    <linkfile src="dey3.2/workspace" dest="dey3.2/workspace"/>
+    <copyfile src="dey3.2/workspace/.gitignore" dest="dey3.2/workspace/.gitignore"/>
   </project>
 
 </manifest>
