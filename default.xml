@@ -37,8 +37,8 @@
   <project name="meta-freescale.git" path="dey3.2/sources/meta-freescale" remote="yocto" revision="gatesgarth"/>
   <project name="meta-fsl-demos.git" path="dey3.2/sources/meta-fsl-demos" remote="fsl" revision="gatesgarth"/>
   <project name="meta-imx.git" path="dey3.2/sources/meta-imx" remote="nxp" revision="gatesgarth-5.10.9-1.0.0"/>
-  <project name="meta-openembedded.git" path="dey3.2/sources/meta-openembedded" remote="oe" revision="gatesgarth"/>
-  <project name="meta-python2.git" path="dey3.2/sources/meta-python2" remote="oe" revision="gatesgarth"/>
+  <project name="meta-openembedded" path="dey3.2/sources/meta-openembedded" remote="oe" revision="gatesgarth"/>
+  <project name="meta-python2" path="dey3.2/sources/meta-python2" remote="oe" revision="gatesgarth"/>
   <project name="meta-qt5.git" path="dey3.2/sources/meta-qt5" remote="qt5" revision="gatesgarth"/>
   <project name="meta-selinux.git" path="dey3.2/sources/meta-selinux" remote="yocto" revision="gatesgarth"/>
   <project name="meta-swupdate.git" path="dey3.2/sources/meta-swupdate" remote="swu" revision="gatesgarth"/>
@@ -46,24 +46,14 @@
   <project name="meta-webkit.git" path="dey3.2/sources/meta-webkit" remote="igl" revision="gatesgarth"/>
   <project name="poky.git" path="dey3.2/sources/poky" remote="yocto" revision="gatesgarth"/>
 
-
-
-
-
-  <project name="dey-aio.git" path="dey-aio/kirkstone" remote="peyoot" revision="main">
-    <linkfile src="dey-aio/kirkstone/meta-custom" dest="dey4.0/sources/meta-custom"/>
-    <linkfile src="dey-aio/kirkstone/tools/mkproject.sh" dest="dey4.0/mkproject.sh"/>
+  <project name="dey-aio.git" path="aio/kirkstone" remote="peyoot" revision="main">
+    <linkfile src="aio/kirkstone/meta-custom" dest="dey4.0/sources/meta-custom"/>
+    <linkfile src="aio/kirkstone/tools/mkproject.sh" dest="dey4.0/mkproject.sh"/>
   </project>
-
-
 
   <project name="dey-aio.git" path="dey-aio/gatesgarth" remote="peyoot" revision="gatesgarth">
-    <linkfile src="dey-aio/gatesgarth/meta-custom" dest="dey3.2/sources/meta-custom"/>
-    <linkfile src="dey-aio/gatesgarth/tools/mkproject.sh" dest="dey3.2/mkproject.sh"/>
+    <linkfile src="aio/gatesgarth/meta-custom" dest="dey3.2/sources/meta-custom"/>
+    <linkfile src="aio/gatesgarth/tools/mkproject.sh" dest="dey3.2/mkproject.sh"/>
   </project>
-
-
-
-
 
 </manifest>
