@@ -10,7 +10,8 @@ dey-aio项目包括了dey-aio和dey-aio-manifest两个部分。dey-aio将DEY项�
 
 dey-aio的开发方式可以和官方的源码树协同工作，把Digi官方的源码树和客户的开发部分用不同的git项目分开管理，但又便于整合和升级重构，更有利于产品整个生命周期内开发运维整个项目。如果您觉得本项目不错，欢迎到github上为本项目点个赞。
 
-#### dey-aio完整工具集安装方法
+#### **dey-aio完整工具集安装方法**
+---
 
 为了正确安装和使用dey-aio，您需要安装yocto开发环境所需的依赖包，如果您要使用docker进行开发，则还需要安装docker和docker-compose。下面安装过程以Ubuntu 22.04为例，同样也适用于Ubuntu 20.04，请使用普通用户来执行这些命令。
 
@@ -59,7 +60,8 @@ repo sync -j8
 这样，dey-aio的工具集就安装好了。  
  
 
-##### 使用dey-aio工具集进行Digi Embedded Yocto的系统开发
+#### **使用dey-aio工具集进行Digi Embedded Yocto的系统开发**
+---
 
 关于科学上网：考虑到国内对github的访问并不顺畅，由于墙对境外IP的阻断方式是间歇式的断开TCP连接，在使用本工具集首次编译时需要科学上网。如果您从未实践过科学上网，可以在位于境外IP的任意云服务器上使用[peyoot/pvpn](https://www.github.com/peyoot/pvpn.git)的开源工具快速架设科学上网环境所需的vpn服务器（[文档](https://www.eccee.com/soft-platform/224.html)），然后在本地开发机器上使用相同的工具自动部署vpn客户端，从而实现编译时所需的科学上网环境。（注：上述的安装过程，不论是否需要科学上网，均可正常使用）
 
@@ -100,6 +102,7 @@ dey-aio的目录结构如下：
 docker-compose可以快速创建一个与主机隔离的dey的开发环境容器，要创建一个新的docker容器来进行开发，可以用：docker-compose run dey<版本号>，这里的版本号可以是3.2或4.0，容器默认使用peyoot/dey作为DEY的镜像，您也可以修改docker-compose.yml，使用官方的digidotcom/dey镜像。  
 例：`docker-compose run dey4.0`  
 这样就可以自动开启容器，并提示您创建项目还是使用原有项目继续开发，如下图所示：  
+<pre>
  +------------------------------------------------------------------------------------+
  |                                                                                    |
  |                                                                                    |
@@ -111,8 +114,8 @@ docker-compose可以快速创建一个与主机隔离的dey的开发环境容器
  |                                                                                    |
  |                                                                                    |
  +------------------------------------------------------------------------------------+
-
  Do you wish to create a new platform project [Y/N]?
+</pre>
  
 输入Y会让您从所支持的开发板中选择当前项目所使用的som或单板机，然后就可以开始编译生成镜像了。  
 `bitbake dey-image-qt`  
@@ -132,11 +135,15 @@ source ../../mkproject.sh -p ccimx93-dvk
 bitbake dey-image-qt
 ```
 
-##### 使用git的方式管理项目的源码变更
+#### **关于meta-custom**
+---
+meta-custom作为一个Yocto的示例layer，用于用户将自定义的程序或配置文件，自启动服务或脚本，驱动程序等文件编译到系统镜像中。用户可以根据项目需要自行更改源码和维护自己的版本库。
+
+#### **使用git的方式管理项目的源码变更**
 
 待续...
 
-##### 使用发布工具快速进行部署和测试
+#### **使用发布工具快速进行部署和测试**
 
 待续...
 
