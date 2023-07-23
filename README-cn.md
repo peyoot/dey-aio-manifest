@@ -122,6 +122,8 @@ docker-compose可以快速创建一个与主机隔离的dey的开发环境容器
   
 如果输入N，则不创建新项目，用户可以到原有的项目中继续从事开发。
 
+您可以使用exit退出 docker环境，并用docker-compose down来关闭容器。更多用法请参考[dey-aio项目](https://github.com/peyoot/dey-aio.git)。
+
 2、使用官方原生的Digi Embedded Yocto开发方式
 
 dey-aio工具集在安装时就已经自动拉取DEY源码到sources，您可以在workspace中创建项目，直接编译。开发方式和官方并没有区别，只是我们把DEY安装在当前目录下，我们需要进入workspace创建新项目的名称，然后和官方一样，用mkproject.sh来创建项目。本项目对下载目录和sstate缓存做了一些优化处理，它们都存放于父级目录下的project\_shared，以方便不同项目使用。以创建cc93项目为例：
