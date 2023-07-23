@@ -42,6 +42,8 @@ sudo gpasswd -a $USER docker     #将登陆用户加入到docker用户组中
 newgrp docker     #更新用户组
 reboot 请先重启一下电脑
 docker ps    #测试docker命令是否可以使用sudo正常使用
+docker network create pvpn --subnet 172.100.100.0/24    #创建配合科学上网使用自定义网络
+
 ```
 
 4、用repo安装dey-aio工具集
@@ -50,7 +52,7 @@ docker ps    #测试docker命令是否可以使用sudo正常使用
 cd
 mkdir dey-aio
 cd dey-aio
-repo init -u https://github.com/peyoot/dey-aio-manifest.git -b main
+repo init -u https://github.com/peyoot/dey-aio-manifest.git -b china    
 repo sync -j8
 ```
 
@@ -59,7 +61,7 @@ repo sync -j8
 
 ##### 使用dey-aio工具集进行Digi Embedded Yocto的系统开发
 
-关于科学上网：考虑到国内对github的访问并不顺畅，由于墙对境外IP的阻断方式是间歇式的断开TCP连接，在使用本工具集首次编译时需要科学上网。如果您从未实践过科学上网，可以在位于境外IP的任意云服务器上使用[peyoot/pvpn](https://www.github.com/peyoot/pvpn.git)的开源工具快速架设科学上网环境所需的vpn服务器（[文档](https://www.eccee.com/soft-platform/224.html)），然后在本地开发机器上使用相同的工具自动部署vpn客户端，从而实现编译时所需的科学上网环境。（注：docker环境下使用，请使用支持科学上网的分支）
+关于科学上网：考虑到国内对github的访问并不顺畅，由于墙对境外IP的阻断方式是间歇式的断开TCP连接，在使用本工具集首次编译时需要科学上网。如果您从未实践过科学上网，可以在位于境外IP的任意云服务器上使用[peyoot/pvpn](https://www.github.com/peyoot/pvpn.git)的开源工具快速架设科学上网环境所需的vpn服务器（[文档](https://www.eccee.com/soft-platform/224.html)），然后在本地开发机器上使用相同的工具自动部署vpn客户端，从而实现编译时所需的科学上网环境。（注：上述的安装过程，不论是否需要科学上网，均可正常使用）
 
 dey-aio的目录结构如下：  
 /  
