@@ -4,6 +4,15 @@ dey-aio-manifest项目配合dey-aio，使用repo来管理dey-aio和DEY官方源�
 
 dey-aio项目全称是Digi Embedded Yocto All In One。它是一个Digi嵌入式核心板的Yocto系统开发工具集，用于更方便地进行SOM系统的裁剪和定制。
 
+功能包括：
+  * 支持用docker容器的方式来搭建DEY 系统开发环境。在单个目录下支持所有 DEY 版本（从 DEY 3.2 开始）。
+  * docker-compose 和官方原生开发方式并存，可共享相同的工作区和工具。
+  * meta-custom示例，用于打包应用程序、配置、驱动程序到固件中。
+  * 跨项目共享下载目录和状态缓存目录以节省磁盘空间
+  * 用户的源码库和 Digi 源码库可单独分开维护，同时又能协同编译项目。
+  * 快速复制必要的固件或设备树驱动到发布目录 和自动生成卡刷安装包zip 文件。
+  * 可以选择发布到本地 TFTP 服务器文件夹或 scp 到远程服务器进行共享。
+
 dey-aio项目由中国区的高级系统工程师Robin开发和维护，它将官方的docker开发方式和native开发方式整合在一个工具集内，提供一个自定义的meta-custom layer来实现文件系统定制，方便用户用git的方式来管理系统镜像或自定义设备树驱动，并提供发布脚本帮助用户快速将编译结果的镜像或设备树文件移到发布目录，或是上传到tftp服务器或发布服务器，以方便快速进行开发测试。
 
 dey-aio项目包括了dey-aio和dey-aio-manifest两个部分。dey-aio将DEY项目用docker的方式进行开发，并提供发布脚本和工具。而dey-aio-manifest是用repo的方式将dey-aio和DEY官方的系统开发工具整合在一起，形成一个完整工具集。用户既可以选择docker-compose的方式，也可以用官方的方式来进行开发，两者可共用相同的发布工具。
