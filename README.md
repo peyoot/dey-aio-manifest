@@ -1,8 +1,8 @@
-# dey-aio-manifest
-This repository contains the manifest files for the dey-aio for Digi's Embedded modules.
+# dey-aio toolset
+This repository (dey-aio-manifest) contains the manifest files for the dey-aio toolset.
 **[[中文说明]](README-cn.md)**
 
-The full name of the dey-aio project is Digi Embedded Yocto All In One. It is a system development toolset for Digi's embedded products(som,sbc/dvk board) for easier tailoring and customization of device tree/firmwares.
+dey-aio stands for Digi Embedded Yocto All In One. It is a system development toolset for Digi's embedded products(som,sbc/dvk) for easier tailoring and customization of device tree/firmwares.
 
 The dey-aio project is developed and maintained by Robin, a senior system engineer/FAE. It integrates the official docker development method and native development method in a single toolset, provides a custom meta-custom layer to achieve file system customization, facilitates users to manage system images or custom device tree in their git repositories, and provide publish tools to help users quickly move/pack the firmwares or device tree files to the release folder. or upload to TFTP server or server after compile for quick testing and debugging.
 
