@@ -1,10 +1,10 @@
-# dey-aio toolset
+## dey-aio ，A toolset to quickly enable Digi SOM Yocto development environment
 This repository (dey-aio-manifest) contains the manifest files for the dey-aio toolset.
 **[[中文说明]](README-cn.md)**
 
 dey-aio stands for Digi Embedded Yocto All In One. It is a system development toolset for Digi's embedded products(som,sbc/dvk) for easier tailoring and customization of device tree/firmwares.
 
-####What is DEY-AIO
+#### What is DEY-AIO
 
 dey-aio stands for Digi Embedded Yocto All In One. It is a system development toolset for Digi's embedded products(som,sbc/dvk) for easier tailoring and customization of device tree/firmwares.
 
