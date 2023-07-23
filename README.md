@@ -103,7 +103,18 @@ docker-compose run dey4.0
 
 This automatically opens the container and prompts you to create a project or continue development using the original project:
 
-![](api/images/hDRQmGbqG1xM/image.png)  
+ +------------------------------------------------------------------------------------+
+ |                                                                                    |
+ |                                                                                    |
+ |                   Welcome to Digi Embedded Yocto Docker container                  |
+ |                                                                                    |
+ |  This Docker image is a ready to use system based on Digi Embedded Yocto (DEY) to  |
+ |  build custom images for the Digi platforms. DEY is an open source and freely      |
+ |  available Yocto Project (TM) based embedded Linux distribution.                   |
+ |                                                                                    |
+ |                                                                                    |
+ +------------------------------------------------------------------------------------+
+
  when you input “Y”, it will let you choose which som platform you're working with can create the project based on your choice. And then you can start to build the firmwares.
 
 2\. Use the official native Digi Embedded Yocto development method
@@ -121,7 +132,7 @@ bitbake dey-image-qt
 
 More documents  will comming soon. You can also refer to Digi official document web portal for help.
 
-###### Special note for docker working with VPN 
+## Special note for docker working with VPN 
 
  In some countries where goverment have enforced internet censorship. You may need VPN to get full access to github and other resources. The default docker-compose file will fail to work when you enable openvpn while not specify the network. The solution is to create a docker network in advance and use this dedicated network instead of docker default one.   
 `docker network create pvpn` `--``subnet` `172.100``.``100.0``/``24`
