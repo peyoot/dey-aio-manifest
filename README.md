@@ -56,7 +56,7 @@ repo sync -j8
 
 Now dey-aio toolset is ready to work!
 
-##### Usage
+#### Usage
 
 dey-aio folder struture  ：  
 /  
@@ -132,7 +132,11 @@ bitbake dey-image-qt
 
 More documents  will comming soon. You can also refer to Digi official document web portal for help.
 
-## Special note for docker working with VPN 
+#### About meta-custom
+
+meta-custom serves as a Yocto example layer for users to compile custom programs or configuration files, self-starting services or scripts, drivers,  into the system images. Users can change the source code and maintain their own version according to the needs of the project.
+
+#### Special note for docker working with VPN 
 
  In some countries where goverment have enforced internet censorship. You may need VPN to get full access to github and other resources. The default docker-compose file will fail to work when you enable openvpn while not specify the network. The solution is to create a docker network in advance and use this dedicated network instead of docker default one.   
 `docker network create pvpn` `--``subnet` `172.100``.``100.0``/``24`
