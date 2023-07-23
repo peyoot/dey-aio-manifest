@@ -59,7 +59,7 @@ repo sync -j8
 
 ##### 使用dey-aio工具集进行Digi Embedded Yocto的系统开发
 
-关于科学上网：考虑到国内对github的访问并不顺畅，由于墙对境外IP的阻断方式是间歇式的断开TCP连接，在使用本工具集首次编译时需要科学上网。如果您从未实践过科学上网，可以在位于境外IP的任意云服务器上使用![peyoot/pvpn](https://www.github.com/peyoot/pvpn.git)的开源工具快速架设科学上网环境所需的vpn服务器（![文档](https://www.eccee.com/soft-platform/224.html)），然后在本地开发机器上使用相同的工具自动部署vpn客户端，从而实现编译时所需的科学上网环境。（注：docker环境下使用，请使用支持科学上网的分支）
+关于科学上网：考虑到国内对github的访问并不顺畅，由于墙对境外IP的阻断方式是间歇式的断开TCP连接，在使用本工具集首次编译时需要科学上网。如果您从未实践过科学上网，可以在位于境外IP的任意云服务器上使用[peyoot/pvpn](https://www.github.com/peyoot/pvpn.git)的开源工具快速架设科学上网环境所需的vpn服务器（[文档](https://www.eccee.com/soft-platform/224.html)），然后在本地开发机器上使用相同的工具自动部署vpn客户端，从而实现编译时所需的科学上网环境。（注：docker环境下使用，请使用支持科学上网的分支）
 
 dey-aio的目录结构如下：  
 /  
