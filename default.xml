@@ -51,7 +51,7 @@
     <linkfile src="mkproject.sh" dest="dey4.0/mkproject.sh"/>
     <linkfile src="docker-compose.yml" dest="dey4.0/docker-compose.yml"/>
     <copyfile src="workspace/.gitignore" dest="dey4.0/workspace/.gitignore"/>
-
+    <linkfile src="tools/publish.sh" dest="dey4.0/workspace/publish.sh"/>
   </project>
 
   <project name="dey-aio.git" path="aio/gatesgarth" remote="peyoot" revision="gatesgarth">
@@ -59,6 +59,7 @@
     <linkfile src="mkproject.sh" dest="dey3.2/mkproject.sh"/>
     <linkfile src="docker-compose.yml" dest="dey3.2/docker-compose.yml"/>
     <copyfile src="workspace/.gitignore" dest="dey3.2/workspace/.gitignore"/>
+    <linkfile src="tools/publish.sh" dest="dey3.2/workspace/publish.sh"/>
   </project>
 
 </manifest>
