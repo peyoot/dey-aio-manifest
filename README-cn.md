@@ -59,7 +59,7 @@ repo sync -j8
 
 ##### 使用dey-aio工具集进行Digi Embedded Yocto的系统开发
 
-关于科学上网：考虑到国内对github的访问并不顺畅，由于墙对境外IP的阻断方式是间歇式的断开TCP连接，在使用本工具集首次编译时需要科学上网。如果您从未实践过科学上网，可以在位于境外IP的任意云服务器上使用peyoot/pvpn的开源工具快速架设科学上网环境所需的vpn服务器，然后在本地开发机器上使用相同的工具自动部署vpn客户端，从而实现编译时所需的科学上网环境。（注：docker环境下使用，请使用支持科学上网的分支）
+关于科学上网：考虑到国内对github的访问并不顺畅，由于墙对境外IP的阻断方式是间歇式的断开TCP连接，在使用本工具集首次编译时需要科学上网。如果您从未实践过科学上网，可以在位于境外IP的任意云服务器上使用![peyoot/pvpn](https://www.github.com/peyoot/pvpn.git)的开源工具快速架设科学上网环境所需的vpn服务器（![文档](https://www.eccee.com/soft-platform/224.html)），然后在本地开发机器上使用相同的工具自动部署vpn客户端，从而实现编译时所需的科学上网环境。（注：docker环境下使用，请使用支持科学上网的分支）
 
 dey-aio的目录结构如下：  
 /  
@@ -98,7 +98,20 @@ dey-aio的目录结构如下：
 docker-compose可以快速创建一个与主机隔离的dey的开发环境容器，要创建一个新的docker容器来进行开发，可以用：docker-compose run dey<版本号>，这里的版本号可以是3.2或4.0，容器默认使用peyoot/dey作为DEY的镜像，您也可以修改docker-compose.yml，使用官方的digidotcom/dey镜像。  
 例：`docker-compose run dey4.0`  
 这样就可以自动开启容器，并提示您创建项目还是使用原有项目继续开发，如下图所示：  
-![](api/images/hDRQmGbqG1xM/image.png)  
+ +------------------------------------------------------------------------------------+
+ |                                                                                    |
+ |                                                                                    |
+ |                   Welcome to Digi Embedded Yocto Docker container                  |
+ |                                                                                    |
+ |  This Docker image is a ready to use system based on Digi Embedded Yocto (DEY) to  |
+ |  build custom images for the Digi platforms. DEY is an open source and freely      |
+ |  available Yocto Project (TM) based embedded Linux distribution.                   |
+ |                                                                                    |
+ |                                                                                    |
+ +------------------------------------------------------------------------------------+
+
+ Do you wish to create a new platform project [Y/N]?
+ 
 输入Y会让您从所支持的开发板中选择当前项目所使用的som或单板机，然后就可以开始编译生成镜像了。  
 `bitbake dey-image-qt`  
   
