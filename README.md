@@ -104,7 +104,7 @@ docker-compose run dey4.0
 ```
 
 This automatically opens the container and prompts you to create a project or continue development using the original project:
-
+<pre>
  +------------------------------------------------------------------------------------+
  |                                                                                    |
  |                                                                                    |
@@ -116,7 +116,8 @@ This automatically opens the container and prompts you to create a project or co
  |                                                                                    |
  |                                                                                    |
  +------------------------------------------------------------------------------------+
-
+ Do you wish to create a new platform project [Y/N]?
+</pre>
  when you input “Y”, it will let you choose which som platform you're working with can create the project based on your choice. And then you can start to build the firmwares.
 
 2\. Use the official native Digi Embedded Yocto development method
