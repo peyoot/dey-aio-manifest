@@ -4,6 +4,20 @@ This repository (dey-aio-manifest) contains the manifest files for the dey-aio t
 
 dey-aio stands for Digi Embedded Yocto All In One. It is a system development toolset for Digi's embedded products(som,sbc/dvk) for easier tailoring and customization of device tree/firmwares.
 
+####What is DEY-AIO
+
+dey-aio stands for Digi Embedded Yocto All In One. It is a system development toolset for Digi's embedded products(som,sbc/dvk) for easier tailoring and customization of device tree/firmwares.
+
+Features includes:
+
+  * DEY system development docker-compose tool.  support all dey version in single folder (start from dey 3.2).
+  * docker-compose and native development way share same workspace and tools.
+  * meta-custom example to build firmwares that contains app,configs,drivers in the rootfs images.
+  * Share downloads and sstate-cache accross projects to save disk space
+  * Customer’s repo and Digi repo maintain seperately while work together to build.
+  * quickly copy the necessary images to release folder and pack installer zip file.
+  * Can also choose to publish to local TFTP server folder or scp to remote server for share.
+
 The dey-aio project is developed and maintained by Robin, a senior system engineer/FAE. It integrates the official docker development method and native development method in a single toolset, provides a custom meta-custom layer to achieve file system customization, facilitates users to manage system images or custom device tree in their git repositories, and provide publish tools to help users quickly move/pack the firmwares or device tree files to the release folder. or upload to TFTP server or server after compile for quick testing and debugging.
 
 The dey-aio project consists of two parts: dey-aio and dey-aio-manifest. dey-aio provide the docker-compose methods to develop DEY projects,  and provides meta-custom and publish tools. The dey-aio-manifest is a repo way to integrate dey-aio and DEY's official system development tools to form a complete toolset. Users can choose either docker-compose or official native development which share the same publishing tools.
