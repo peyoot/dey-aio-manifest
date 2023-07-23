@@ -120,6 +120,10 @@ This automatically opens the container and prompts you to create a project or co
 </pre>
  when you input “Y”, it will let you choose which som platform you're working with can create the project based on your choice. And then you can start to build the firmwares.
 
+ To continue with previous project, simply input "N". 
+
+ You can type "exit" in the dey docker container to quit. and use "docker-compose down" to close the container. More usage please refer to [dey-aio](https://github.vom/peyoot/dey-aio）
+
 2\. Use the official native Digi Embedded Yocto development method
 
 The dey-aio toolset automatically pulls the DEY source code when it is being installed. And you can create a project in the workspace folder and compile it directly. This method is no different from the official one, except that it install DEY in the sources folder of currentdirectory.  we need to enter the corresponding workspace folder to create the new project.  dey-aio has made some optimizations for different projects to share the download folder and sstate cache, which are stored in the project\_shared under workspace. Take the creation of the cc93 project as an example:
