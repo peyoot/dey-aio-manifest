@@ -1,8 +1,8 @@
-# dey-aio-manifest
-这个git库配合dey-aio，使用repo来管理dey-aio和DEY官方源码。
+# dey-aio 快速开发Digi嵌入式产品的工具集
+dey-aio-manifest项目配合dey-aio，使用repo来管理dey-aio和DEY官方源码。
 **[[English]](README.md)**
 
-dey-aio项目全称是Digi Embedded Yocto All In One。它是一个Digi嵌入式核心板的系统开发工具集，用于更方便地进行SOM系统的裁剪和定制。
+dey-aio项目全称是Digi Embedded Yocto All In One。它是一个Digi嵌入式核心板的Yocto系统开发工具集，用于更方便地进行SOM系统的裁剪和定制。
 
 dey-aio项目由中国区的高级系统工程师Robin开发和维护，它将官方的docker开发方式和native开发方式整合在一个工具集内，提供一个自定义的meta-custom layer来实现文件系统定制，方便用户用git的方式来管理系统镜像或自定义设备树驱动，并提供发布脚本帮助用户快速将编译结果的镜像或设备树文件移到发布目录，或是上传到tftp服务器或发布服务器，以方便快速进行开发测试。
 
