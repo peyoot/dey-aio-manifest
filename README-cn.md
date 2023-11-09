@@ -54,7 +54,7 @@ cd
 mkdir dey-aio
 cd dey-aio
 repo init -u https://github.com/peyoot/dey-aio-manifest.git -b china    
-repo sync -j8
+repo sync -j8 --no-repo-verify
 ```
 
 这样，dey-aio的工具集就安装好了。  

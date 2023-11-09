@@ -52,7 +52,7 @@ cd
 mkdir dey-aio
 cd dey-aio
 repo init -u https://github.com/peyoot/dey-aio-manifest.git -b main
-repo sync -j8
+repo sync -j8 --no-repo-verify
 ```
 
 Now dey-aio toolset is ready to work!
