@@ -14,7 +14,9 @@
   <remote name="oe"    fetch="https://git.openembedded.org"/>
   <remote name="yocto" fetch="https://git.yoctoproject.org"/>
   <remote name="peyoot"  fetch="https://github.com/peyoot"/>
+  <remote name="ros"  fetch="https://github.com/ros"/>
 
+  <project name="meta-ros.git" path="dey4.0/sources/meta-ros" remote="ros" revision="kirkstone"/>
   <project name="meta-digi.git" path="dey4.0/sources/meta-digi" remote="digi" revision="kirkstone"/>
   <project name="meta-freescale.git" path="dey4.0/sources/meta-freescale" remote="yocto" revision="kirkstone"/>
   <project name="meta-fsl-demos.git" path="dey4.0/sources/meta-fsl-demos" remote="fsl" revision="kirkstone"/>
