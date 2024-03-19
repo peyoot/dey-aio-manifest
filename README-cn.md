@@ -27,7 +27,7 @@ dey-aio的开发方式可以和官方的源码树协同工作，把Digi官方的
 1、安装必要的包
 
 ```text-plain
-sudo apt install gawk wget git diffstat zip unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev pylint xterm python3-subunit mesa-common-dev zstd liblz4-tool
+sudo apt install gawk wget git file diffstat zip unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev pylint xterm python3-subunit mesa-common-dev zstd liblz4-tool
 ```
 
 安装上述依赖包之后，还需要指定python版本为python3，最简单的方式是安装一个包：
