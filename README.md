@@ -1,6 +1,6 @@
 ##update
 change meta-ros and meta-qt5 version to kirkstone-next
-
+change meta-ros back to kirkstone to debug openmp issue
 
 ## dey-aio ，A toolset to quickly enable Digi SOM Yocto development environment
 This repository (dey-aio-manifest) contains the manifest files for the dey-aio toolset.
