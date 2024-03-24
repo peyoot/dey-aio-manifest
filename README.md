@@ -1,3 +1,7 @@
+##update
+change meta-ros and meta-qt5 version to kirkstone-next
+
+
 ## dey-aio ，A toolset to quickly enable Digi SOM Yocto development environment
 This repository (dey-aio-manifest) contains the manifest files for the dey-aio toolset.
 **[[中文说明]](README-cn.md)**
