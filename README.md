@@ -68,7 +68,7 @@ docker ps    #after reboot, you can test if docker can work with your login acco
 cd
 mkdir dey-aio
 cd dey-aio
-repo init -u https://github.com/peyoot/dey-aio-manifest.git -b main
+repo init -u https://github.com/peyoot/dey-aio-manifest.git -b ros
 repo sync -j8
 ```
 

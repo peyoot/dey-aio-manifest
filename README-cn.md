@@ -62,7 +62,7 @@ docker network create pvpn --subnet 172.100.100.0/24    #创建配合科学上�
 cd
 mkdir dey-aio
 cd dey-aio
-repo init -u https://github.com/peyoot/dey-aio-manifest.git -b china    
+repo init -u https://github.com/peyoot/dey-aio-manifest.git -b ros    
 repo sync -j8
 ```
 
