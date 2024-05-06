@@ -140,6 +140,7 @@ bitbake dey-image-qt
 #### **关于meta-custom**
 ---
 meta-custom作为一个Yocto的示例layer，用于用户将自定义的程序或配置文件，自启动服务或脚本，驱动程序等文件编译到系统镜像中。用户可以根据项目需要自行更改源码和维护自己的版本库。
+为了更方便编排ros，把meta-custom单独作为一个git库，从dey4.0 kirkstone最新版开始，meta-custom不在是dey-aio的一部分
 
 #### **使用git的方式管理项目的源码变更**
 
