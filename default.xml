@@ -16,7 +16,7 @@
   <remote name="ros"  fetch="https://github.com/ros"/>
   <remote name="peyoot"  fetch="https://github.com/peyoot"/>
 
-  <project name="meta-ros.git" path="dey4.0/sources/meta-ros" remote="ros" revision="kirkstone-next"/>
+  <project name="meta-ros.git" path="dey4.0/sources/meta-ros" remote="ros" revision="kirkstone"/>
   <project name="meta-custom.git" path="dey4.0/sources/meta-custom" remote="peyoot" revision="kirkstone-ros"/>
   <project name="meta-digi.git" path="dey4.0/sources/meta-digi" remote="digi" revision="kirkstone"/>
   <project name="meta-freescale.git" path="dey4.0/sources/meta-freescale" remote="yocto" revision="kirkstone"/>
@@ -25,7 +25,7 @@
   <project name="meta-st-stm32mp.git" path="dey4.0/sources/meta-st-stm32mp" remote="stm" revision="kirkstone"/>
   <project name="meta-st-stm32mpu-ai.git" path="dey4.0/sources/meta-st-stm32mpu-ai" remote="stm" revision="kirkstone"/>
   <project name="meta-openembedded" path="dey4.0/sources/meta-openembedded" remote="oe" revision="kirkstone"/>
-  <project name="meta-qt5.git" path="dey4.0/sources/meta-qt5" remote="qt5" revision="kirkstone-next"/>
+  <project name="meta-qt5.git" path="dey4.0/sources/meta-qt5" remote="qt5" revision="kirkstone"/>
   <project name="meta-qt6.git" path="dey4.0/sources/meta-qt6" remote="qt6" revision="6.5"/>
   <project name="meta-selinux.git" path="dey4.0/sources/meta-selinux" remote="yocto" revision="kirkstone"/>
   <project name="meta-swupdate.git" path="dey4.0/sources/meta-swupdate" remote="swu" revision="kirkstone"/>
