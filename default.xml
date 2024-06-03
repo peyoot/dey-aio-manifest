@@ -28,7 +28,7 @@
   <project name="meta-qt5.git" path="dey4.0/sources/meta-qt5" remote="qt5" revision="kirkstone"/>
   <project name="meta-qt6.git" path="dey4.0/sources/meta-qt6" remote="qt6" revision="6.5"/>
   <project name="meta-selinux.git" path="dey4.0/sources/meta-selinux" remote="yocto" revision="kirkstone"/>
-  <project name="meta-swupdate.git" path="dey4.0/sources/meta-swupdate" remote="swu" revision="kirkstone"/>
+  <project name="meta-swupdate.git" path="dey4.0/sources/meta-swupdate" remote="swu" revision="b1f76d7070bdea6ae4c99d3858a5551ea367d3ac"/>
   <project name="meta-timesys.git" path="dey4.0/sources/meta-timesys" remote="timesys" revision="kirkstone"/>
   <project name="meta-webkit.git" path="dey4.0/sources/meta-webkit" remote="igl" revision="kirkstone"/>
   <project name="meta-wolfssl.git" path="dey4.0/sources/meta-wolfssl" remote="wlf" revision="kirkstone"/>
