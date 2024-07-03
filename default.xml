@@ -34,30 +34,30 @@
   <project name="meta-digi-dualboot.git" path="dey3.2/sources/meta-digi-dualboot" remote="digi" revision="5c68453a2da23e46bcab89881b892a4149765962" upstream="gatesgarth" dest-branch="gatesgarth"/>
   <project name="meta-digi.git" path="dey4.0/sources/meta-digi" remote="digi" revision="41150445902c3be55cb7803cbd64480766c3c44c" upstream="kirkstone" dest-branch="kirkstone"/>
   <project name="meta-digi.git" path="dey3.2/sources/meta-digi" remote="digi" revision="dda780b0cffa210661c695a609c9746eddca0074" upstream="gatesgarth" dest-branch="gatesgarth"/>
-  <project name="meta-freescale.git" path="dey4.0/sources/meta-freescale" remote="yocto" revision="4c81b4161b99698b03332842b588dd8235ac47e4" upstream="kirkstone" dest-branch="kirkstone"/>
+  <project name="meta-freescale.git" path="dey4.0/sources/meta-freescale" remote="yocto" revision="fb17bfb8edcc9560bc1beb966a68f1f4c08ecfb3" upstream="kirkstone" dest-branch="kirkstone"/>
   <project name="meta-freescale.git" path="dey3.2/sources/meta-freescale" remote="yocto" revision="c0c3b6108837ff232831b67c9ca87fb5b891182a" upstream="gatesgarth" dest-branch="gatesgarth"/>
   <project name="meta-fsl-demos.git" path="dey4.0/sources/meta-fsl-demos" remote="fsl" revision="d5bbb487b2816dfc74984a78b67f7361ce404253" upstream="kirkstone" dest-branch="kirkstone"/>
   <project name="meta-fsl-demos.git" path="dey3.2/sources/meta-fsl-demos" remote="fsl" revision="50eb2b32e7702bc435049bfe0a98fc65c864c106" upstream="gatesgarth" dest-branch="gatesgarth"/>
   <project name="meta-imx.git" path="dey4.0/sources/meta-imx" remote="nxp" revision="9174c61f4dc80b14e0bfdaec9200ed58fb41615f" upstream="kirkstone-5.15.71-2.2.0" dest-branch="kirkstone-5.15.71-2.2.0"/>
   <project name="meta-imx.git" path="dey3.2/sources/meta-imx" remote="nxp" revision="83d7642fe53f1cd3871cf2b2692b61459237cd64" upstream="gatesgarth-5.10.9-1.0.0" dest-branch="gatesgarth-5.10.9-1.0.0"/>
-  <project name="meta-openembedded" path="dey4.0/sources/meta-openembedded" remote="oe" revision="6ff0748a4741517519a281985fc3cd95dadb633e" upstream="kirkstone" dest-branch="kirkstone"/>
+  <project name="meta-openembedded" path="dey4.0/sources/meta-openembedded" remote="oe" revision="0560b848996a0feb410a8cd8ca07c60fe2f3b5bc" upstream="kirkstone" dest-branch="kirkstone"/>
   <project name="meta-openembedded" path="dey3.2/sources/meta-openembedded" remote="oe" revision="f3f7a5f1a4713f145107bb043e0d14cb3a51c62f" upstream="gatesgarth" dest-branch="gatesgarth"/>
   <project name="meta-python2" path="dey3.2/sources/meta-python2" remote="oe" revision="3fae17aece0e6d82f56965fe501bf7080c671df8" upstream="gatesgarth" dest-branch="gatesgarth"/>
   <project name="meta-qt5.git" path="dey4.0/sources/meta-qt5" remote="qt5" revision="644ebf220245bdc06e7696ccc90acc97a0dd2566" upstream="kirkstone" dest-branch="kirkstone"/>
   <project name="meta-qt5.git" path="dey3.2/sources/meta-qt5" remote="qt5" revision="5d70466cc7d74369956dceacdfd89f41516860d0" upstream="gatesgarth" dest-branch="gatesgarth"/>
   <project name="meta-qt6.git" path="dey4.0/sources/meta-qt6" remote="qt6" revision="2e751503e1c37d864b87afee211347d60a055766" upstream="6.5" dest-branch="6.5"/>
-  <project name="meta-ros.git" path="dey4.0/sources/meta-ros" remote="ros" revision="7ec7008e570c861dc481f976a2e0bb6034cc7656" upstream="kirkstone" dest-branch="kirkstone"/>
+  <project name="meta-ros.git" path="dey4.0/sources/meta-ros" remote="ros" revision="9a857afebc18e0f426d87226bd085727ea9ce4ae" upstream="kirkstone" dest-branch="kirkstone"/>
   <project name="meta-selinux.git" path="dey4.0/sources/meta-selinux" remote="yocto" revision="a401f4b2816a0b41ce8d9351542658c721935bcd" upstream="kirkstone" dest-branch="kirkstone"/>
   <project name="meta-selinux.git" path="dey3.2/sources/meta-selinux" remote="yocto" revision="a5938609e1f8dbc969560c851e3ef5eb91e0845e" upstream="gatesgarth" dest-branch="gatesgarth"/>
   <project name="meta-st-stm32mp.git" path="dey4.0/sources/meta-st-stm32mp" remote="stm" revision="311a492c21f0f3643f4b764f8b743c4c6908d31b" upstream="kirkstone" dest-branch="kirkstone"/>
   <project name="meta-st-stm32mpu-ai.git" path="dey4.0/sources/meta-st-stm32mpu-ai" remote="stm" revision="3e5c19e9ba4ef5740e026f0cda4c77e3814fe967" upstream="kirkstone" dest-branch="kirkstone"/>
   <project name="meta-swupdate.git" path="dey4.0/sources/meta-swupdate" remote="swu" revision="b1f76d7070bdea6ae4c99d3858a5551ea367d3ac"/>
   <project name="meta-swupdate.git" path="dey3.2/sources/meta-swupdate" remote="swu" revision="744d6b96fc0290a7df9045e60c734c4924abfd4a" upstream="gatesgarth" dest-branch="gatesgarth"/>
-  <project name="meta-timesys.git" path="dey4.0/sources/meta-timesys" remote="timesys" revision="c2f65e99c8ac3001452a2c436a4a22413d2f95ef" upstream="kirkstone" dest-branch="kirkstone"/>
-  <project name="meta-timesys.git" path="dey3.2/sources/meta-timesys" remote="timesys" revision="a8685fdc3032cf8729c7ece2083ee073c552991f" upstream="gatesgarth" dest-branch="gatesgarth"/>
+  <project name="meta-timesys.git" path="dey4.0/sources/meta-timesys" remote="timesys" revision="1d3561e499f87170fa15f571d1d6c020fb4db281" upstream="kirkstone" dest-branch="kirkstone"/>
+  <project name="meta-timesys.git" path="dey3.2/sources/meta-timesys" remote="timesys" revision="6e32965fe48ca88471a47ac06f3e6abaa6c022d9" upstream="gatesgarth" dest-branch="gatesgarth"/>
   <project name="meta-webkit.git" path="dey4.0/sources/meta-webkit" remote="igl" revision="a6d6b2f98c748cad658b421f83993405a9a59b4b" upstream="kirkstone" dest-branch="kirkstone"/>
   <project name="meta-webkit.git" path="dey3.2/sources/meta-webkit" remote="igl" revision="1f8554cc9fa04195df1020ab949b032fc987124e" upstream="gatesgarth" dest-branch="gatesgarth"/>
   <project name="meta-wolfssl.git" path="dey4.0/sources/meta-wolfssl" remote="wlf" revision="226eba29e4750c007ad5052e26d3a6f32bb9e689" upstream="kirkstone" dest-branch="kirkstone"/>
-  <project name="poky.git" path="dey4.0/sources/poky" remote="yocto" revision="cbac0f1bfc025d11aea74db16034e9589fbcffa6" upstream="kirkstone" dest-branch="kirkstone"/>
+  <project name="poky.git" path="dey4.0/sources/poky" remote="yocto" revision="e139e9d0ce343ba77a09601a976c92acd562c9df" upstream="kirkstone" dest-branch="kirkstone"/>
   <project name="poky.git" path="dey3.2/sources/poky" remote="yocto" revision="13143ea85a1ab7703825c0673128c05845b96cb5" upstream="gatesgarth" dest-branch="gatesgarth"/>
 </manifest>
