@@ -13,11 +13,11 @@
   <remote name="wlf"   fetch="https://github.com/wolfSSL"/>
   <remote name="oe"    fetch="https://git.openembedded.org"/>
   <remote name="yocto" fetch="https://git.yoctoproject.org"/>
-  <remote name="ros"  fetch="https://github.com/ros"/>
+  <remote name="mono"  fetch="https://github.com/DynamicDevices/meta-mono"/>
   <remote name="peyoot"  fetch="https://github.com/peyoot"/>
 
-  <project name="meta-ros.git" path="dey4.0/sources/meta-ros" remote="ros" revision="kirkstone"/>
-  <project name="meta-custom.git" path="dey4.0/sources/meta-custom" remote="peyoot" revision="kirkstone-ros"/>
+  <project name="meta-mono.git" path="dey4.0/sources/meta-mono" remote="mono" revision="kirkstone"/>
+  <project name="meta-custom.git" path="dey4.0/sources/meta-custom" remote="peyoot" revision="kirkstone"/>
   <project name="meta-digi.git" path="dey4.0/sources/meta-digi" remote="digi" revision="kirkstone"/>
   <project name="meta-freescale.git" path="dey4.0/sources/meta-freescale" remote="yocto" revision="kirkstone"/>
   <project name="meta-fsl-demos.git" path="dey4.0/sources/meta-fsl-demos" remote="fsl" revision="kirkstone"/>
@@ -49,7 +49,7 @@
   <project name="meta-webkit.git" path="dey3.2/sources/meta-webkit" remote="igl" revision="gatesgarth"/>
   <project name="poky.git" path="dey3.2/sources/poky" remote="yocto" revision="gatesgarth"/>
 
-  <project name="dey-aio.git" path="aio/kirkstone" remote="peyoot" revision="kirkstone-ros">
+  <project name="dey-aio.git" path="aio/kirkstone" remote="peyoot" revision="kirkstone-mono">
     <linkfile src="mkproject.sh" dest="dey4.0/mkproject.sh"/>
     <linkfile src="docker-compose.yml" dest="dey4.0/docker-compose.yml"/>
     <copyfile src="workspace/.gitignore" dest="dey4.0/workspace/.gitignore"/>
