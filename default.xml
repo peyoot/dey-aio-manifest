@@ -13,7 +13,7 @@
   <remote name="wlf"   fetch="https://github.com/wolfSSL"/>
   <remote name="oe"    fetch="https://git.openembedded.org"/>
   <remote name="yocto" fetch="https://git.yoctoproject.org"/>
-  <remote name="mono"  fetch="https://github.com/DynamicDevices/meta-mono"/>
+  <remote name="mono"  fetch="https://github.com/DynamicDevices"/>
   <remote name="peyoot"  fetch="https://github.com/peyoot"/>
 
   <project name="meta-mono.git" path="dey4.0/sources/meta-mono" remote="mono" revision="kirkstone"/>
