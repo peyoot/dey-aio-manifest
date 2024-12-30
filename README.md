@@ -185,6 +185,6 @@ To simplify the process, customer can aslo check “china” branch instead of �
 
 To add zeus and meta-qt4 support , please use zeus-qt4.xml instead of defaut.xml
 ```
-repo init -u https://github.com/digi-embedded/dey-manifest.git -b kirkstone -m zeus-qt4.xml
+repo init -u https://github.com/peyoot/dey-aio-manifest.git -b main -m zeus-qt4.xml
 repo sync
 ```

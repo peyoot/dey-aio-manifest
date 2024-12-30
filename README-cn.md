@@ -150,7 +150,7 @@ bitbake dey-image-qt
 要使用DEY 3.0和qt4项目，请检出zeus-qt4.xml
 
 ```
-repo init -u https://github.com/digi-embedded/dey-manifest.git -b kirkstone -m zeus-qt4.xml
+repo init -u https://github.com/peyoot/dey-aio-manifest.git -b main -m zeus-qt4.xml
 repo sync
 ```
 
