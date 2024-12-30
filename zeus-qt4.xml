@@ -6,7 +6,6 @@
   <remote name="igl"   fetch="https://github.com/Igalia"/>
   <remote name="nxp"   fetch="https://github.com/nxp-imx"/>
   <remote name="qt5"   fetch="https://github.com/meta-qt5"/>
-  <remote name="qt4"   fetch="https://git.yoctoproject.org/meta-qt4"/>
   <remote name="swu"   fetch="https://github.com/sbabic"/>
   <remote name="oe"    fetch="https://git.openembedded.org"/>
   <remote name="yocto" fetch="https://git.yoctoproject.org"/>
@@ -20,7 +19,7 @@
   <project name="meta-openembedded" path="dey3.0/sources/meta-openembedded" remote="oe" revision="zeus"/>
   <project name="meta-python2.git" path="dey3.0/sources/meta-python2" remote="oe" revision="zeus"/>
   <project name="meta-qt5.git" path="dey3.0/sources/meta-qt5" remote="qt5" revision="zeus"/>
-  <project name="meta-qt4.git" path="dey3.0/sources/meta-qt4" remote="qt4" revision="zeus"/>
+  <project name="meta-qt4.git" path="dey3.0/sources/meta-qt4" remote="yocto" revision="zeus"/>
   <project name="meta-swupdate.git" path="dey3.0/sources/meta-swupdate" remote="swu" revision="b1f76d7070bdea6ae4c99d3858a5551ea367d3ac"/>
   <project name="meta-webkit.git" path="dey3.0/sources/meta-webkit" remote="igl" revision="zeus"/>
   <project name="poky.git" path="dey3.0/sources/poky" remote="yocto" revision="zeus"/>
