@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default sync-j="8" revision="main"/>
+  <remote name="digi"  fetch="https://github.com/digi-embedded"/>
+  <remote name="fsl"   fetch="https://github.com/Freescale"/>
+  <remote name="igl"   fetch="https://github.com/Igalia"/>
+  <remote name="nxp"   fetch="https://github.com/nxp-imx"/>
+  <remote name="qt5"   fetch="https://github.com/meta-qt5"/>
+  <remote name="qt4"   fetch="https://git.yoctoproject.org/meta-qt4"/>
+  <remote name="swu"   fetch="https://github.com/sbabic"/>
+  <remote name="oe"    fetch="https://git.openembedded.org"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org"/>
+  <remote name="peyoot"  fetch="https://github.com/peyoot"/>
+
+  <project name="meta-custom.git" path="dey3.0/sources/meta-custom" remote="peyoot" revision="zeus"/>
+  <project name="meta-digi.git" path="dey3.0/sources/meta-digi" remote="digi" revision="zeus"/>
+  <project name="meta-freescale.git" path="dey3.0/sources/meta-freescale" remote="yocto" revision="zeus"/>
+  <project name="meta-fsl-demos.git" path="dey3.0/sources/meta-fsl-demos" remote="fsl" revision="zeus"/>
+  <project name="meta-imx.git" path="dey3.0/sources/meta-imx" remote="nxp" revision="zeus-5.4.70-2.3.1"/>
+  <project name="meta-openembedded" path="dey3.0/sources/meta-openembedded" remote="oe" revision="zeus"/>
+  <project name="meta-python2.git" path="dey3.0/sources/meta-python2" remote="oe" revision="zeus"/>
+  <project name="meta-qt5.git" path="dey3.0/sources/meta-qt5" remote="qt5" revision="zeus"/>
+  <project name="meta-qt4.git" path="dey3.0/sources/meta-qt4" remote="qt4" revision="zeus"/>
+  <project name="meta-swupdate.git" path="dey3.0/sources/meta-swupdate" remote="swu" revision="b1f76d7070bdea6ae4c99d3858a5551ea367d3ac"/>
+  <project name="meta-webkit.git" path="dey3.0/sources/meta-webkit" remote="igl" revision="zeus"/>
+  <project name="poky.git" path="dey3.0/sources/poky" remote="yocto" revision="zeus"/>
+
+  <project name="dey-aio.git" path="aio/zeus" remote="peyoot" revision="zeus">
+    <linkfile src="mkproject.sh" dest="dey3.0/mkproject.sh"/>
+    <linkfile src="docker-compose.yml" dest="dey3.0/docker-compose.yml"/>
+    <copyfile src="workspace/.gitignore" dest="dey3.0/workspace/.gitignore"/>
+    <linkfile src="tools/publish.sh" dest="dey3.0/publish.sh"/>
+  </project>
+</manifest>
