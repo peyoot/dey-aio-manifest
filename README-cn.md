@@ -146,6 +146,14 @@ source ../../mkproject.sh -p ccimx93-dvk
 bitbake dey-image-qt
 ```
 
+#### **meta-qt4和zeus支持**
+要使用DEY 3.0和qt4项目，请检出zeus-qt4.xml
+
+```
+repo init -u https://github.com/digi-embedded/dey-manifest.git -b kirkstone -m zeus-qt4.xml
+repo sync
+```
+
 #### **关于meta-custom**
 ---
 meta-custom作为一个Yocto的示例layer，用于用户将自定义的程序或配置文件，自启动服务或脚本，驱动程序等文件编译到系统镜像中。用户可以根据项目需要自行更改源码和维护自己的版本库。

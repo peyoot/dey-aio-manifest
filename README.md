@@ -181,4 +181,10 @@ networks:
 To simplify the process, customer can aslo check “china” branch instead of “main” to enable the toolset working with VPN after create the external docker network.
 
 
+#### **meta-qt4 and zeus support**
 
+To add zeus and meta-qt4 support , please use zeus-qt4.xml instead of defaut.xml
+```
+repo init -u https://github.com/digi-embedded/dey-manifest.git -b kirkstone -m zeus-qt4.xml
+repo sync
+```
