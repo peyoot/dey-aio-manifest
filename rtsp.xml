@@ -34,34 +34,11 @@
   <project name="meta-wolfssl.git" path="dey4.0/sources/meta-wolfssl" remote="wlf" revision="kirkstone"/>
   <project name="poky.git" path="dey4.0/sources/poky" remote="yocto" revision="kirkstone"/>
 
-
-  <project name="meta-digi.git" path="dey3.2/sources/meta-digi" remote="digi" revision="gatesgarth"/>
-  <project name="meta-digi-dualboot.git" path="dey3.2/sources/meta-digi-dualboot" remote="digi" revision="gatesgarth"/>
-  <project name="meta-freescale.git" path="dey3.2/sources/meta-freescale" remote="yocto" revision="gatesgarth"/>
-  <project name="meta-fsl-demos.git" path="dey3.2/sources/meta-fsl-demos" remote="fsl" revision="gatesgarth"/>
-  <project name="meta-imx.git" path="dey3.2/sources/meta-imx" remote="nxp" revision="gatesgarth-5.10.9-1.0.0"/>
-  <project name="meta-openembedded" path="dey3.2/sources/meta-openembedded" remote="oe" revision="gatesgarth"/>
-  <project name="meta-python2" path="dey3.2/sources/meta-python2" remote="oe" revision="gatesgarth"/>
-  <project name="meta-qt5.git" path="dey3.2/sources/meta-qt5" remote="qt5" revision="gatesgarth"/>
-  <project name="meta-selinux.git" path="dey3.2/sources/meta-selinux" remote="yocto" revision="gatesgarth"/>
-  <project name="meta-swupdate.git" path="dey3.2/sources/meta-swupdate" remote="swu" revision="gatesgarth"/>
-  <project name="meta-timesys.git" path="dey3.2/sources/meta-timesys" remote="timesys" revision="gatesgarth"/>
-  <project name="meta-webkit.git" path="dey3.2/sources/meta-webkit" remote="igl" revision="gatesgarth"/>
-  <project name="poky.git" path="dey3.2/sources/poky" remote="yocto" revision="gatesgarth"/>
-
   <project name="dey-aio.git" path="aio/kirkstone" remote="peyoot" revision="kirkstone">
     <linkfile src="mkproject.sh" dest="dey4.0/mkproject.sh"/>
     <linkfile src="docker-compose.yml" dest="dey4.0/docker-compose.yml"/>
     <copyfile src="workspace/.gitignore" dest="dey4.0/workspace/.gitignore"/>
     <linkfile src="tools/publish.sh" dest="dey4.0/publish.sh"/>
-  </project>
-
-  <project name="dey-aio.git" path="aio/gatesgarth" remote="peyoot" revision="gatesgarth">
-    <linkfile src="sources/meta-custom" dest="dey3.2/sources/meta-custom"/>
-    <linkfile src="mkproject.sh" dest="dey3.2/mkproject.sh"/>
-    <linkfile src="docker-compose.yml" dest="dey3.2/docker-compose.yml"/>
-    <copyfile src="workspace/.gitignore" dest="dey3.2/workspace/.gitignore"/>
-    <linkfile src="tools/publish.sh" dest="dey3.2/publish.sh"/>
   </project>
 
 </manifest>
