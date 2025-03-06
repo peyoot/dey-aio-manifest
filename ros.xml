@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default sync-j="8" revision="main"/>
+  <remote name="digi"  fetch="https://github.com/digi-embedded"/>
+  <remote name="fsl"   fetch="https://github.com/Freescale"/>
+  <remote name="igl"   fetch="https://github.com/Igalia"/>
+  <remote name="nxp"   fetch="https://github.com/nxp-imx"/>
+  <remote name="qt5"   fetch="https://github.com/meta-qt5"/>
+  <remote name="qt6"   fetch="https://code.qt.io/yocto"/>
+  <remote name="swu"   fetch="https://github.com/sbabic"/>
+  <remote name="stm"   fetch="https://github.com/STMicroelectronics"/>
+  <remote name="timesys" fetch="https://github.com/TimesysGit"/>
+  <remote name="wlf"   fetch="https://github.com/wolfSSL"/>
+  <remote name="oe"    fetch="https://git.openembedded.org"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org"/>
+  <remote name="ros"  fetch="https://github.com/ros"/>
+  <remote name="peyoot"  fetch="https://github.com/peyoot"/>
+
+  <project name="meta-ros.git" path="dey4.0/sources/meta-ros" remote="ros" revision="kirkstone"/>
+  <project name="meta-custom.git" path="dey4.0/sources/meta-custom" remote="peyoot" revision="kirkstone-ros"/>
+  <project name="meta-digi.git" path="dey4.0/sources/meta-digi" remote="digi" revision="kirkstone"/>
+  <project name="meta-freescale.git" path="dey4.0/sources/meta-freescale" remote="yocto" revision="kirkstone"/>
+  <project name="meta-fsl-demos.git" path="dey4.0/sources/meta-fsl-demos" remote="fsl" revision="kirkstone"/>
+  <project name="meta-imx.git" path="dey4.0/sources/meta-imx" remote="nxp" revision="kirkstone-5.15.71-2.2.0"/>
+  <project name="meta-st-stm32mp.git" path="dey4.0/sources/meta-st-stm32mp" remote="stm" revision="kirkstone"/>
+  <project name="meta-st-stm32mpu-ai.git" path="dey4.0/sources/meta-st-stm32mpu-ai" remote="stm" revision="kirkstone"/>
+  <project name="meta-openembedded" path="dey4.0/sources/meta-openembedded" remote="oe" revision="kirkstone"/>
+  <project name="meta-qt5.git" path="dey4.0/sources/meta-qt5" remote="qt5" revision="kirkstone"/>
+  <project name="meta-qt6.git" path="dey4.0/sources/meta-qt6" remote="qt6" revision="6.5"/>
+  <project name="meta-selinux.git" path="dey4.0/sources/meta-selinux" remote="yocto" revision="kirkstone"/>
+  <project name="meta-swupdate.git" path="dey4.0/sources/meta-swupdate" remote="swu" revision="b1f76d7070bdea6ae4c99d3858a5551ea367d3ac"/>
+  <project name="meta-timesys.git" path="dey4.0/sources/meta-timesys" remote="timesys" revision="kirkstone"/>
+  <project name="meta-virtualization.git" path="dey4.0/sources/meta-virtualization" remote="yocto" revision="kirkstone"/>
+  <project name="meta-webkit.git" path="dey4.0/sources/meta-webkit" remote="igl" revision="kirkstone"/>
+  <project name="meta-wolfssl.git" path="dey4.0/sources/meta-wolfssl" remote="wlf" revision="kirkstone"/>
+  <project name="poky.git" path="dey4.0/sources/poky" remote="yocto" revision="kirkstone"/>
+
+
+  <project name="meta-digi.git" path="dey3.2/sources/meta-digi" remote="digi" revision="gatesgarth"/>
+  <project name="meta-digi-dualboot.git" path="dey3.2/sources/meta-digi-dualboot" remote="digi" revision="gatesgarth"/>
+  <project name="meta-freescale.git" path="dey3.2/sources/meta-freescale" remote="yocto" revision="gatesgarth"/>
+  <project name="meta-fsl-demos.git" path="dey3.2/sources/meta-fsl-demos" remote="fsl" revision="gatesgarth"/>
+  <project name="meta-imx.git" path="dey3.2/sources/meta-imx" remote="nxp" revision="gatesgarth-5.10.9-1.0.0"/>
+  <project name="meta-openembedded" path="dey3.2/sources/meta-openembedded" remote="oe" revision="gatesgarth"/>
+  <project name="meta-python2" path="dey3.2/sources/meta-python2" remote="oe" revision="gatesgarth"/>
+  <project name="meta-qt5.git" path="dey3.2/sources/meta-qt5" remote="qt5" revision="gatesgarth"/>
+  <project name="meta-selinux.git" path="dey3.2/sources/meta-selinux" remote="yocto" revision="gatesgarth"/>
+  <project name="meta-swupdate.git" path="dey3.2/sources/meta-swupdate" remote="swu" revision="gatesgarth"/>
+  <project name="meta-timesys.git" path="dey3.2/sources/meta-timesys" remote="timesys" revision="gatesgarth"/>
+  <project name="meta-webkit.git" path="dey3.2/sources/meta-webkit" remote="igl" revision="gatesgarth"/>
+  <project name="poky.git" path="dey3.2/sources/poky" remote="yocto" revision="gatesgarth"/>
+
+  <project name="dey-aio.git" path="aio/kirkstone" remote="peyoot" revision="kirkstone-ros">
+    <linkfile src="mkproject.sh" dest="dey4.0/mkproject.sh"/>
+    <linkfile src="docker-compose.yml" dest="dey4.0/docker-compose.yml"/>
+    <copyfile src="workspace/.gitignore" dest="dey4.0/workspace/.gitignore"/>
+    <linkfile src="tools/publish.sh" dest="dey4.0/publish.sh"/>
+  </project>
+
+  <project name="dey-aio.git" path="aio/gatesgarth" remote="peyoot" revision="gatesgarth">
+    <linkfile src="sources/meta-custom" dest="dey3.2/sources/meta-custom"/>
+    <linkfile src="mkproject.sh" dest="dey3.2/mkproject.sh"/>
+    <linkfile src="docker-compose.yml" dest="dey3.2/docker-compose.yml"/>
+    <copyfile src="workspace/.gitignore" dest="dey3.2/workspace/.gitignore"/>
+    <linkfile src="tools/publish.sh" dest="dey3.2/publish.sh"/>
+  </project>
+
+</manifest>
