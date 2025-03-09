@@ -21,7 +21,7 @@
   <project name="meta-fsl-demos.git" path="dey5.0/sources/meta-fsl-demos" remote="fsl" revision="scarthgap"/>
   <project name="meta-imx.git" path="dey5.0/sources/meta-imx" remote="nxp" revision="scarthgap-6.6.52-2.2.0"/>
   <project name="meta-st-stm32mp.git" path="dey5.0/sources/meta-st-stm32mp" remote="stm" revision="scarthgap"/>
-  <project name="meta-st-x-linux-ai.git" path="dey5.0/sources/meta-st-x-linux-ai.git" remote="stm" revision="scarthgap"/>
+  <project name="meta-st-x-linux-ai.git" path="dey5.0/sources/meta-st-x-linux-ai" remote="stm" revision="scarthgap"/>
   <project name="meta-openembedded" path="dey5.0/sources/meta-openembedded" remote="oe" revision="scarthgap"/>
   <project name="meta-qt5.git" path="dey5.0/sources/meta-qt5" remote="qt5" revision="scarthgap"/>
   <project name="meta-qt6.git" path="dey5.0/sources/meta-qt6" remote="qt6" revision="6.8"/>
