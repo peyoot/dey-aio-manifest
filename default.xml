@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <default sync-j="8" revision="scarthgap"/>
+  <remote name="clang"   fetch="https://github.com/kraj"/>
   <remote name="digi"  fetch="https://github.com/digi-embedded"/>
+  <remote name="flutter" fetch="https://github.com/meta-flutter"/>
   <remote name="fsl"   fetch="https://github.com/Freescale"/>
   <remote name="igl"   fetch="https://github.com/Igalia"/>
   <remote name="nxp"   fetch="https://github.com/nxp-imx"/>
@@ -15,13 +17,15 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org"/>
   <remote name="peyoot"  fetch="https://github.com/peyoot"/>
 
+  <project name="meta-clang.git" path="dey5.0/sources/meta-clang" remote="clang" revision="scarthgap"/>
+  <project name="meta-flutter.git" path="dey5.0/sources/meta-flutter" remote="flutter" revision="scarthgap"/>
   <project name="meta-custom.git" path="dey5.0/sources/meta-custom" remote="peyoot" revision="scarthgap"/>
   <project name="meta-digi.git" path="dey5.0/sources/meta-digi" remote="digi" revision="scarthgap"/>
   <project name="meta-freescale.git" path="dey5.0/sources/meta-freescale" remote="yocto" revision="scarthgap"/>
   <project name="meta-fsl-demos.git" path="dey5.0/sources/meta-fsl-demos" remote="fsl" revision="scarthgap"/>
   <project name="meta-imx.git" path="dey5.0/sources/meta-imx" remote="nxp" revision="scarthgap-6.6.52-2.2.0"/>
-  <project name="meta-st-stm32mp.git" path="dey5.0/sources/meta-st-stm32mp" remote="stm" revision="b73bad826ff491d009cf46514ad63c02a3dd242f"/>
-  <project name="meta-st-x-linux-ai.git" path="dey5.0/sources/meta-st-x-linux-ai" remote="stm" revision="scarthgap"/>
+  <project name="meta-st-stm32mp.git" path="dey5.0/sources/meta-st-stm32mp" remote="stm" revision="74cfa6813688bbbaea178ce885056c367671bb7f"/>
+  <project name="meta-st-x-linux-ai.git" path="dey5.0/sources/meta-st-x-linux-ai" remote="stm" revision="d40bcbe2b804b70b4c5bb959b3e3fd15973cd663"/>
   <project name="meta-openembedded" path="dey5.0/sources/meta-openembedded" remote="oe" revision="scarthgap"/>
   <project name="meta-qt5.git" path="dey5.0/sources/meta-qt5" remote="qt5" revision="scarthgap"/>
   <project name="meta-qt6.git" path="dey5.0/sources/meta-qt6" remote="qt6" revision="6.8"/>
@@ -30,7 +34,7 @@
   <project name="meta-timesys.git" path="dey5.0/sources/meta-timesys" remote="timesys" revision="scarthgap"/>
   <project name="meta-virtualization.git" path="dey5.0/sources/meta-virtualization" remote="yocto" revision="scarthgap"/>
   <project name="meta-webkit.git" path="dey5.0/sources/meta-webkit" remote="igl" revision="7c6d6529d0d06956bdfe4f7096faf146d949b086"/>
-  <project name="meta-wolfssl.git" path="dey5.0/sources/meta-wolfssl" remote="wlf" revision="kirkstone"/>
+  <project name="meta-wolfssl.git" path="dey5.0/sources/meta-wolfssl" remote="wlf" revision="master"/>
   <project name="poky.git" path="dey5.0/sources/poky" remote="yocto" revision="scarthgap"/>
 
   <project name="meta-custom.git" path="dey4.0/sources/meta-custom" remote="peyoot" revision="kirkstone"/>
