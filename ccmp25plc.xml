@@ -17,7 +17,7 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org"/>
   <remote name="peyoot"  fetch="https://github.com/peyoot"/>
 
-  <project name="meta-custom.git" path="dey5.0/sources/meta-custom" remote="peyoot" revision="2b1e047c2842e3651bfe9ab3472750be4b99e116"/>
+  <project name="meta-custom.git" path="dey5.0/sources/meta-custom" remote="peyoot" revision="529db48d45ceb0b2c8561cbe60ec211d33ee5abf"/>
   <project name="meta-clang.git" path="dey5.0/sources/meta-clang" remote="clang" revision="aef850f7fa53121c74b244b7ae40d31fb9809ccf"/>
   <project name="meta-flutter.git" path="dey5.0/sources/meta-flutter" remote="flutter" revision="a5d163c43722d358d21fdbca4920e42a45042c5c"/>
   <project name="meta-digi.git" path="dey5.0/sources/meta-digi" remote="digi" revision="b2eb7a5825f4871293fe86801a29a08f98c6e90a"/>
