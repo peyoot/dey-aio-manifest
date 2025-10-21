@@ -37,6 +37,33 @@
   <project name="meta-wolfssl.git" path="dey5.0/sources/meta-wolfssl" remote="wlf" revision="master"/>
   <project name="poky.git" path="dey5.0/sources/poky" remote="yocto" revision="scarthgap"/>
 
+  
+  <project name="meta-custom.git" path="dey4.0/sources/meta-custom" remote="peyoot" revision="kirkstone"/>
+  <project name="meta-digi.git" path="dey4.0/sources/meta-digi" remote="digi" revision="kirkstone"/>
+  <project name="meta-freescale.git" path="dey4.0/sources/meta-freescale" remote="yocto" revision="kirkstone"/>
+  <project name="meta-fsl-demos.git" path="dey4.0/sources/meta-fsl-demos" remote="fsl" revision="kirkstone"/>
+  <project name="meta-imx.git" path="dey4.0/sources/meta-imx" remote="nxp" revision="kirkstone-5.15.71-2.2.0"/>
+  <project name="meta-st-stm32mp.git" path="dey4.0/sources/meta-st-stm32mp" remote="stm" revision="kirkstone"/>
+  <project name="meta-st-stm32mpu-ai.git" path="dey4.0/sources/meta-st-stm32mpu-ai" remote="stm" revision="kirkstone"/>
+  <project name="meta-openembedded" path="dey4.0/sources/meta-openembedded" remote="oe" revision="kirkstone"/>
+  <project name="meta-qt5.git" path="dey4.0/sources/meta-qt5" remote="qt5" revision="kirkstone"/>
+  <project name="meta-qt6.git" path="dey4.0/sources/meta-qt6" remote="qt6" revision="6.5"/>
+  <project name="meta-selinux.git" path="dey4.0/sources/meta-selinux" remote="yocto" revision="kirkstone"/>
+  <project name="meta-swupdate.git" path="dey4.0/sources/meta-swupdate" remote="swu" revision="b1f76d7070bdea6ae4c99d3858a5551ea367d3ac"/>
+  <project name="meta-timesys.git" path="dey4.0/sources/meta-timesys" remote="timesys" revision="kirkstone"/>
+  <project name="meta-virtualization.git" path="dey4.0/sources/meta-virtualization" remote="yocto" revision="kirkstone"/>
+  <project name="meta-webkit.git" path="dey4.0/sources/meta-webkit" remote="igl" revision="kirkstone"/>
+  <project name="meta-wolfssl.git" path="dey4.0/sources/meta-wolfssl" remote="wlf" revision="kirkstone"/>
+  <project name="poky.git" path="dey4.0/sources/poky" remote="yocto" revision="kirkstone"/>
+
+  <project name="dey-aio.git" path="aio/kirkstone" remote="peyoot" revision="kirkstone">
+    <linkfile src="mkproject.sh" dest="dey4.0/mkproject.sh"/>
+    <linkfile src="docker-compose.yml" dest="dey4.0/docker-compose.yml"/>
+    <copyfile src="workspace/.gitignore" dest="dey4.0/workspace/.gitignore"/>
+    <linkfile src="tools/publish.sh" dest="dey4.0/publish.sh"/>
+  </project>
+
+
   <project name="dey-aio.git" path="aio/scarthgap" remote="peyoot" revision="scarthgap">
     <linkfile src="mkproject.sh" dest="dey5.0/mkproject.sh"/>
     <linkfile src="docker-compose.yml" dest="dey5.0/docker-compose.yml"/>
