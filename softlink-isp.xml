@@ -19,7 +19,7 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org"/>
   <remote name="peyoot"  fetch="https://github.com/peyoot"/>
 
-  <project name="meta-custom.git" path="dey5.0/sources/meta-custom" remote="peyoot" revision="softlink"/>
+  <project name="meta-custom.git" path="dey5.0/sources/meta-custom" remote="peyoot" revision="scarthgap-softlink"/>
   <project name="meta-arm.git" path="dey5.0/sources/meta-arm" remote="yocto" revision="a81c19915b5b9e71ed394032e9a50fd06919e1cd"/>
   <project name="meta-browser.git" path="dey5.0/sources/meta-browser" remote="browser" revision="f988d616d37ddf160d3d747ed54d0a66d549f499"/>
   <project name="meta-clang.git" path="dey5.0/sources/meta-clang" remote="clang" revision="5c602337ea1a80fb7217eeda04e396cf90587dca"/>
