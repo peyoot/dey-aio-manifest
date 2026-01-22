@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 使用内网源时，
+1. 在内网机器的 ~/.gitconfig 中添加.gitconfig的内容，或是直接把本代码库的.gitconfig复制到用户目录下。
+效果：repo sync 时，所有 GitHub HTTPS 自动替换为 Stash SSH（e.g., https://git.yoctoproject.org/meta-arm.git → ssh://git@stash.digi.com/dey/meta-arm.git）。
+只需配置一次，所有未来 repo 项目都生效。
+2. 在 repo init 后的工作目录下，将本代码库的local_manifests目录复制到项目的.repo目录下，repo会自动加载这个文件
+内网外网分支属性等有差异时可以自动修正。
+  -->
 <manifest>
   <default sync-j="8" revision="scarthgap"/>
   <remote name="browser" fetch="https://github.com/OSSystems"/>

@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 使用内网源时，
+1. 在内网机器的 ~/.gitconfig 中添加.gitconfig的内容，或是直接把本代码库的.gitconfig复制到用户目录下。
+效果：repo sync 时，所有 GitHub HTTPS 自动替换为 Stash SSH（e.g., https://git.yoctoproject.org/meta-arm.git → ssh://git@stash.digi.com/dey/meta-arm.git）。
+只需配置一次，所有未来 repo 项目都生效。
+2. 在 repo init 后的工作目录下，将本代码库的local_manifests目录复制到项目的.repo目录下，repo会自动加载这个文件
+内网外网分支属性等有差异时可以自动修正。
+  -->
 <manifest>
   <default sync-j="8" revision="scarthgap"/>
   <remote name="browser" fetch="https://github.com/OSSystems"/>
@@ -19,6 +26,38 @@
   <remote name="peyoot"  fetch="https://github.com/peyoot"/>
 
   <project name="meta-custom.git" path="dey5.0/sources/meta-custom" remote="peyoot" revision="scarthgap-ros"/>
+  <project name="meta-arm.git" path="dey5.0/sources/meta-arm" remote="yocto" revision="scarthgap"/>
+  <project name="meta-browser.git" path="dey5.0/sources/meta-browser" remote="browser" revision="f988d616d37ddf160d3d747ed54d0a66d549f499"/>
+  <project name="meta-clang.git" path="dey5.0/sources/meta-clang" remote="clang" revision="scarthgap"/>
+  <project name="meta-flutter.git" path="dey5.0/sources/meta-flutter" remote="flutter" revision="scarthgap"/>
+  <project name="meta-digi.git" path="dey5.0/sources/meta-digi" remote="digi" revision="scarthgap"/>
+  <project name="meta-freescale.git" path="dey5.0/sources/meta-freescale" remote="yocto" revision="scarthgap"/>
+  <project name="meta-fsl-demos.git" path="dey5.0/sources/meta-fsl-demos" remote="fsl" revision="scarthgap"/>
+  <project name="meta-imx.git" path="dey5.0/sources/meta-imx" remote="nxp" revision="scarthgap-6.6.52-2.2.1"/>
+  <project name="meta-st-stm32mp.git" path="dey5.0/sources/meta-st-stm32mp" remote="stm" revision="scarthgap"/>
+  <project name="meta-st-x-linux-ai.git" path="dey5.0/sources/meta-st-x-linux-ai" remote="stm" revision="scarthgap"/>
+  <project name="meta-openembedded" path="dey5.0/sources/meta-openembedded" remote="oe" revision="scarthgap"/>
+  <project name="meta-qt5.git" path="dey5.0/sources/meta-qt5" remote="qt5" revision="scarthgap"/>
+  <project name="meta-qt6.git" path="dey5.0/sources/meta-qt6" remote="qt6" revision="6.8"/>
+  <project name="meta-selinux.git" path="dey5.0/sources/meta-selinux" remote="yocto" revision="scarthgap"/>
+  <project name="meta-swupdate.git" path="dey5.0/sources/meta-swupdate" remote="swu" revision="43ef322cbf5b91d84b007c343cf73e9b01699594"/>
+  <project name="meta-timesys.git" path="dey5.0/sources/meta-timesys" remote="timesys" revision="scarthgap"/>
+  <project name="meta-virtualization.git" path="dey5.0/sources/meta-virtualization" remote="yocto" revision="scarthgap"/>
+  <project name="meta-webkit.git" path="dey5.0/sources/meta-webkit" remote="igl" revision="scarthgap"/>
+  <project name="meta-wolfssl.git" path="dey5.0/sources/meta-wolfssl" remote="wlf" revision="master"/>
+  <project name="poky.git" path="dey5.0/sources/poky" remote="yocto" revision="scarthgap"/>
+
+  <project name="dey-aio.git" path="aio/scarthgap" remote="peyoot" revision="scarthgap">
+    <linkfile src="mkproject.sh" dest="dey5.0/mkproject.sh"/>
+    <linkfile src="docker-compose.yml" dest="dey5.0/docker-compose.yml"/>
+    <copyfile src="workspace/.gitignore" dest="dey5.0/workspace/.gitignore"/>
+    <linkfile src="tools/publish.sh" dest="dey5.0/publish.sh"/>
+  </project>
+
+</manifest>
+
+
+  <project name="meta-custom.git" path="dey5.0/sources/meta-custom" remote="peyoot" revision="scarthgap-rt-nodemo"/>
   <project name="meta-arm.git" path="dey5.0/sources/meta-arm" remote="yocto" revision="a81c19915b5b9e71ed394032e9a50fd06919e1cd"/>
   <project name="meta-browser.git" path="dey5.0/sources/meta-browser" remote="browser" revision="f988d616d37ddf160d3d747ed54d0a66d549f499"/>
   <project name="meta-clang.git" path="dey5.0/sources/meta-clang" remote="clang" revision="5c602337ea1a80fb7217eeda04e396cf90587dca"/>
