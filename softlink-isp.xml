@@ -8,6 +8,10 @@
 
 isp测试支持需要用meta-digi的abuzarra/dey-5.0/master_DEL-9890_add_support_x_linux_isp_ccmp2_12012026， 在local_manifests里改！！
 
+内网中，local.conf中加上
+DIGI_INTERNAL_GIT ?= "1"  
+避免配方中去用ls-remote查github上的库
+
   -->
 <manifest>
   <default sync-j="8" revision="scarthgap"/>
