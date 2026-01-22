@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-1、git的全局配置中，git config **global url."ssh://git@stash.digi.com/".insteadOf "https://github.com/" ，注意星号用短划线替代。
-上面这个命令可以在上电时执行或直接放入.rcbash中
-2、在内网机器的 ~/.gitconfig 中添加.gitconfig的内容，或是直接把本代码库的.gitconfig复制到用户目录下。
+1、在内网机器的 ~/.gitconfig 中添加.gitconfig的内容，或是直接把本代码库的.gitconfig复制到用户目录下。
 效果：repo sync 时，所有 GitHub HTTPS 自动替换为 Stash SSH（e.g., https://git.yoctoproject.org/meta-arm.git → ssh://git@stash.digi.com/dey/meta-arm.git）。
 只需配置一次，所有未来 repo 项目都生效。
-3、repo init新创建项目时用github作为源，然后将本代码库的local_manifests目录复制到项目的.repo目录下，repo会自动加载这个文件
+2、repo init新创建项目时用github作为源，然后将本代码库的local_manifests目录复制到项目的.repo目录下，repo会自动加载这个文件
 内网外网分支属性等有差异时可以自动修正。
   -->
 <manifest>
