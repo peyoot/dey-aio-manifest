@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- 可选：强化内网 remote（insteadOf 已处理，但加此确保） -->
+  <remote name="digi" fetch="ssh://git@stash.digi.com/dey/" />
+  <!-- 添加内部专有项目 (公司源，无 upstream/) -->
+  <!-- meta-digi-security is meant for internal use only, do not include in github manifest -->
+  <project name="meta-digi-security.git" path="sources/meta-digi-security" remote="digi" revision="dey-5.0/master"/>
+
+  
+
+  <!-- Override meta-digi (公司源，无 upstream/) -->
+  <remove-project name="meta-digi.git" />
+  <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="dey-5.0/master">
+    <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
+  </project>
+
+  <!-- Override 其他项目：加 upstream/ 前缀，调整 name/revision 如果不同 -->
+  <project name="meta-st-x-linux-isp" path="sources/meta-st-x-linux-isp" remote="digi" revision="upstream/scarthgap"/>
+  <remove-project name="meta-arm.git" />
+  <project name="meta-arm.git" path="sources/meta-arm" remote="digi" revision="upstream/scarthgap"/>
+
+  <!-- meta-browser commit hash 一致，无需加 upstream -->
+  <remove-project name="meta-browser.git" />
+  <project name="meta-browser.git" path="sources/meta-browser" remote="digi" revision="f988d616d37ddf160d3d747ed54d0a66d549f499"/>
+
+  <remove-project name="meta-clang.git" />
+  <project name="meta-clang.git" path="sources/meta-clang" remote="digi" revision="upstream/scarthgap"/>
+
+  <remove-project name="meta-flutter.git" />
+  <project name="meta-flutter.git" path="sources/meta-flutter" remote="digi" revision="upstream/scarthgap"/>
+
+  <remove-project name="meta-freescale.git" />
+  <project name="meta-freescale.git" path="sources/meta-freescale" remote="digi" revision="upstream/scarthgap"/>
+
+  <remove-project name="meta-fsl-demos.git" />
+  <project name="meta-fsl-demos.git" path="sources/meta-fsl-demos" remote="digi" revision="upstream/scarthgap"/>
+
+  <remove-project name="meta-imx.git" />
+  <project name="meta-imx.git" path="sources/meta-imx" remote="digi" revision="upstream/scarthgap-6.6.52-2.2.2"/>  <!-- 版本微调匹配内部 -->
+
+  <remove-project name="meta-st-stm32mp.git" />
+  <project name="meta-st-stm32mp" path="sources/meta-st-stm32mp" remote="digi" revision="upstream/scarthgap"/>  <!-- name 无 .git 匹配内部 -->
+
+  <remove-project name="meta-st-x-linux-ai.git" />
+  <project name="meta-st-x-linux-ai" path="sources/meta-st-x-linux-ai" remote="digi" revision="upstream/scarthgap"/>  <!-- name 无 .git -->
+
+  <remove-project name="meta-openembedded.git" />
+  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="digi" revision="upstream/scarthgap"/>
+
+  <remove-project name="meta-qt5.git" />
+  <project name="meta-qt5.git" path="sources/meta-qt5" remote="digi" revision="upstream/scarthgap"/>
+
+  <remove-project name="meta-qt6.git" />
+  <project name="meta-qt6.git" path="sources/meta-qt6" remote="digi" revision="upstream/6.8"/>
+
+  <remove-project name="meta-selinux.git" />
+  <project name="meta-selinux.git" path="sources/meta-selinux" remote="digi" revision="upstream/scarthgap"/>
+
+  <remove-project name="meta-swupdate.git" />
+  <project name="meta-swupdate.git" path="sources/meta-swupdate" remote="digi" revision="upstream/scarthgap"/>  <!-- 从 commit override 到 upstream/ -->
+
+  <remove-project name="meta-timesys.git" />
+  <project name="meta-timesys.git" path="sources/meta-timesys" remote="digi" revision="upstream/scarthgap"/>
+
+  <remove-project name="meta-virtualization.git" />
+  <project name="meta-virtualization.git" path="sources/meta-virtualization" remote="digi" revision="upstream/scarthgap"/>
+
+  <remove-project name="meta-webkit.git" />
+  <project name="meta-webkit.git" path="sources/meta-webkit" remote="digi" revision="upstream/scarthgap"/>
+
+  <remove-project name="meta-wolfssl.git" />
+  <project name="meta-wolfssl.git" path="sources/meta-wolfssl" remote="digi" revision="upstream/master"/>
+
+  <remove-project name="poky.git" />
+  <project name="poky.git" path="sources/poky" remote="digi" revision="upstream/scarthgap"/>
+</manifest>

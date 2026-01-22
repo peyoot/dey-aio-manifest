@@ -1,0 +1,16 @@
+[url "ssh://git@stash.digi.com/dey/"]
+    insteadOf = https://github.com/digi-embedded/
+    insteadOf = https://github.com/OSSystems/
+    insteadOf = https://github.com/kraj/
+    insteadOf = https://github.com/meta-flutter/
+    insteadOf = https://github.com/Freescale/
+    insteadOf = https://github.com/nxp-imx/
+    insteadOf = https://github.com/STMicroelectronics/
+    insteadOf = https://github.com/meta-qt5/
+    insteadOf = https://code.qt.io/yocto/
+    insteadOf = https://github.com/sbabic/
+    insteadOf = https://github.com/TimesysGit/
+    insteadOf = https://github.com/Igalia/
+    insteadOf = https://github.com/wolfSSL/
+    insteadOf = https://git.openembedded.org/
+    insteadOf = https://git.yoctoproject.org/
