@@ -54,8 +54,8 @@
     <linkfile src="tools/publish.sh" dest="dey5.0/publish.sh"/>
   </project>
 
-  <!-- Pull the manifest repo itself into local_manifests to apply internal overrides automatically -->
-  <project name="dey-aio-manifest.git" path="local_manifests" remote="peyoot" revision="scarthgap" />
+  <!-- Include internal overrides from subdir for Stash SSH and upstream revisions -->
+  <include name="local_manifests/internal-overrides.xml" />
 
 </manifest>
 
