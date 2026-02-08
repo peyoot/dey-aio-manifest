@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default sync-j="8" revision="scarthgap"/>
+  <default sync-j="4" revision="scarthgap"/>
   <remote name="clang"   fetch="https://github.com/kraj"/>
   <remote name="digi"  fetch="https://github.com/digi-embedded"/>
   <remote name="flutter" fetch="https://github.com/meta-flutter"/>

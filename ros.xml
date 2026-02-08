@@ -7,7 +7,7 @@
 内网外网分支属性等有差异时可以自动修正。
   -->
 <manifest>
-  <default sync-j="8" revision="scarthgap"/>
+  <default sync-j="4" revision="scarthgap"/>
   <remote name="browser" fetch="https://github.com/OSSystems"/>
   <remote name="clang"   fetch="https://github.com/kraj"/>
   <remote name="digi"  fetch="https://github.com/digi-embedded"/>
