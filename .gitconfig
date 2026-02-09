@@ -7,6 +7,7 @@
     insteadOf = https://github.com/nxp-imx/
     insteadOf = https://github.com/STMicroelectronics/
     insteadOf = https://github.com/meta-qt5/
+    insteadOf = https://github.com/meta-qt6/
     insteadOf = https://code.qt.io/yocto/
     insteadOf = https://github.com/sbabic/
     insteadOf = https://github.com/TimesysGit/
