@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- 可选：强化内网 remote（insteadOf 已处理，但加此确保） -->
+  <!-- 注意，DNS需要支持内网；强化内网 remote（insteadOf 已处理，但加此确保） -->
   <remote name="digistash" fetch="ssh://git@stash.digi.com/dey/" />
   <!-- 添加内部专有项目 (公司源，无 upstream/) -->
   <!-- meta-digi-security is meant for internal use only, do not include in github manifest -->
