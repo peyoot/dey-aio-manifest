@@ -6,13 +6,9 @@
   <!-- meta-digi-security is meant for internal use only, do not include in github manifest -->
   <project name="meta-digi-security.git" path="dey5.0/sources/meta-digi-security" remote="digistash" revision="dey-5.0/master"/>
 
-  
-
-  <!-- Override meta-digi (公司源，无 upstream/) -->
+    <!-- Override meta-digi (公司源，无 upstream/) -->
   <remove-project name="meta-digi.git" />
-  <project name="meta-digi.git" path="dey5.0/sources/meta-digi" remote="digistash" revision="dey-5.0/master">
-    <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
-  </project>
+  <project name="meta-digi.git" path="dey5.0/sources/meta-digi" remote="digistash" revision="dey-5.0/master"/>
 
   <!-- Override 其他项目：加 upstream/ 前缀，调整 name/revision 如果不同 -->
   <project name="meta-st-x-linux-isp" path="dey5.0/sources/meta-st-x-linux-isp" remote="digistash" revision="upstream/scarthgap"/>
