@@ -23,9 +23,11 @@
   <remote name="wlf"   fetch="https://github.com/wolfSSL"/>
   <remote name="oe"    fetch="https://git.openembedded.org"/>
   <remote name="yocto" fetch="https://git.yoctoproject.org"/>
+  <remote name="ros"  fetch="https://github.com/ros"/>
   <remote name="peyoot"  fetch="https://github.com/peyoot"/>
 
   <project name="meta-custom.git" path="dey5.0/sources/meta-custom" remote="peyoot" revision="scarthgap-ros"/>
+  <project name="meta-ros.git" path="dey4.0/sources/meta-ros" remote="ros" revision="scarthgap"/>
   <project name="meta-arm.git" path="dey5.0/sources/meta-arm" remote="yocto" revision="scarthgap"/>
   <project name="meta-browser.git" path="dey5.0/sources/meta-browser" remote="browser" revision="f988d616d37ddf160d3d747ed54d0a66d549f499"/>
   <project name="meta-clang.git" path="dey5.0/sources/meta-clang" remote="clang" revision="scarthgap"/>
