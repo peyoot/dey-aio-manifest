@@ -18,6 +18,7 @@
   <remote name="peyoot"  fetch="https://github.com/peyoot"/>
 
   <project name="meta-custom.git" path="dey5.0/sources/meta-custom" remote="peyoot" revision="scarthgap"/>
+  <project name="meta-mono.git" path="dey5.0/sources/meta-mono" remote="mono" revision="scarthgap"/>
   <project name="meta-clang.git" path="dey5.0/sources/meta-clang" remote="clang" revision="scarthgap"/>
   <project name="meta-flutter.git" path="dey5.0/sources/meta-flutter" remote="flutter" revision="scarthgap"/>
   <project name="meta-digi.git" path="dey5.0/sources/meta-digi" remote="digi" revision="scarthgap"/>
