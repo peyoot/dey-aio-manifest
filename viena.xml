@@ -18,6 +18,8 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org"/>
   <remote name="peyoot"  fetch="https://github.com/peyoot"/>
 
+  <!-- 自定义镜像版本包括镜像特性，自定义板卡设备树等，均放在meta-custom中，分支名称依次为<yocto版本>-<Feature说明>-<板卡代号或版本>
+  -->
   <project name="meta-custom.git" path="dey5.0/sources/meta-custom" remote="peyoot" revision="scarthgap-viena"/>
   <project name="meta-arm.git" path="dey5.0/sources/meta-arm" remote="yocto" revision="a81c19915b5b9e71ed394032e9a50fd06919e1cd"/>
   <project name="meta-browser.git" path="dey5.0/sources/meta-browser" remote="browser" revision="f988d616d37ddf160d3d747ed54d0a66d549f499"/>
