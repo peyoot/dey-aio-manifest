@@ -40,7 +40,7 @@
   <project name="meta-wolfssl.git" path="dey5.0/sources/meta-wolfssl" remote="wlf" revision="8dec5040fc810138e8178c04fd1f864a49f9e948"/>
   <project name="poky.git" path="dey5.0/sources/poky" remote="yocto" revision="9497778a4d756daa29c4fa8d45d1a242d63ab8cc"/>
 
-  <project name="dey-aio.git" path="aio/scarthgap" remote="peyoot" revision="scarthgap-ros">
+  <project name="dey-aio.git" path="aio/scarthgap" remote="peyoot" revision="scarthgap">
     <linkfile src="mkproject.sh" dest="dey5.0/mkproject.sh"/>
     <linkfile src="docker-compose.yml" dest="dey5.0/docker-compose.yml"/>
     <copyfile src="workspace/.gitignore" dest="dey5.0/workspace/.gitignore"/>
