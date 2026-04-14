@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+1、在内网机器的 ~/.gitconfig 中添加.gitconfig的内容，或是直接把本代码库的.gitconfig复制到用户目录下。
+效果：repo sync 时，所有 GitHub HTTPS 自动替换为 Eccee的源 SSH（e.g., https://github.com/digi-embedded/meta-digi.git → https://git.eccee.com/Digi/meta-digi）。
+从而获取未推送到github上的分支
+
+  -->
+<manifest>
+  <default sync-j="4" revision="scarthgap"/>
+  <remote name="browser" fetch="https://github.com/OSSystems"/>
+  <remote name="clang"   fetch="https://github.com/kraj"/>
+  <remote name="digi"  fetch="https://github.com/digi-embedded"/>
+  <remote name="flutter" fetch="https://github.com/meta-flutter"/>
+  <remote name="fsl"   fetch="https://github.com/Freescale"/>
+  <remote name="igl"   fetch="https://github.com/Igalia"/>
+  <remote name="nxp"   fetch="https://github.com/nxp-imx"/>
+  <remote name="qt5"   fetch="https://github.com/meta-qt5"/>
+  <remote name="qt6"   fetch="https://code.qt.io/yocto"/>
+  <remote name="swu"   fetch="https://github.com/sbabic"/>
+  <remote name="stm"   fetch="https://github.com/STMicroelectronics"/>
+  <remote name="timesys" fetch="https://github.com/TimesysGit"/>
+  <remote name="wlf"   fetch="https://github.com/wolfSSL"/>
+  <remote name="oe"    fetch="https://git.openembedded.org"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org"/>
+  <remote name="peyoot"  fetch="https://github.com/peyoot"/>
+
+  <project name="meta-custom.git" path="dey5.0/sources/meta-custom" remote="peyoot" revision="scarthgap"/>
+  <project name="meta-digi.git" path="dey5.0/sources/meta-digi" remote="digi" revision="cc95_v2_alpha"/>
+  <project name="meta-arm.git" path="dey5.0/sources/meta-arm" remote="yocto" revision="scarthgap"/>
+  <project name="meta-browser.git" path="dey5.0/sources/meta-browser" remote="browser" revision="f988d616d37ddf160d3d747ed54d0a66d549f499"/>
+  <project name="meta-clang.git" path="dey5.0/sources/meta-clang" remote="clang" revision="scarthgap"/>
+  <project name="meta-flutter.git" path="dey5.0/sources/meta-flutter" remote="flutter" revision="scarthgap"/>
+  <project name="meta-freescale.git" path="dey5.0/sources/meta-freescale" remote="yocto" revision="scarthgap"/>
+  <project name="meta-fsl-demos.git" path="dey5.0/sources/meta-fsl-demos" remote="fsl" revision="scarthgap"/>
+  <project name="meta-imx.git" path="dey5.0/sources/meta-imx" remote="nxp" revision="scarthgap-6.6.52-2.2.1"/>
+  <project name="meta-st-stm32mp.git" path="dey5.0/sources/meta-st-stm32mp" remote="stm" revision="fae1c3bcad05f338da80e69fc150b8697ad874c5"/>
+  <project name="meta-st-x-linux-ai.git" path="dey5.0/sources/meta-st-x-linux-ai" remote="stm" revision="6813080f1bb326793950c5a3ae02a3fd59a94f28"/>
+  <project name="meta-openembedded.git" path="dey5.0/sources/meta-openembedded" remote="oe" revision="scarthgap"/>
+  <project name="meta-qt5.git" path="dey5.0/sources/meta-qt5" remote="qt5" revision="scarthgap"/>
+  <project name="meta-qt6.git" path="dey5.0/sources/meta-qt6" remote="qt6" revision="6.8"/>
+  <project name="meta-selinux.git" path="dey5.0/sources/meta-selinux" remote="yocto" revision="scarthgap"/>
+  <project name="meta-swupdate.git" path="dey5.0/sources/meta-swupdate" remote="swu" revision="43ef322cbf5b91d84b007c343cf73e9b01699594"/>
+  <project name="meta-timesys.git" path="dey5.0/sources/meta-timesys" remote="timesys" revision="scarthgap"/>
+  <project name="meta-virtualization.git" path="dey5.0/sources/meta-virtualization" remote="yocto" revision="scarthgap"/>
+  <project name="meta-webkit.git" path="dey5.0/sources/meta-webkit" remote="igl" revision="scarthgap"/>
+  <project name="meta-wolfssl.git" path="dey5.0/sources/meta-wolfssl" remote="wlf" revision="master"/>
+  <project name="poky.git" path="dey5.0/sources/poky" remote="yocto" revision="scarthgap"/>
+
+  <project name="dey-aio.git" path="aio/scarthgap" remote="peyoot" revision="scarthgap">
+    <linkfile src="mkproject.sh" dest="dey5.0/mkproject.sh"/>
+    <linkfile src="docker-compose.yml" dest="dey5.0/docker-compose.yml"/>
+    <copyfile src="workspace/.gitignore" dest="dey5.0/workspace/.gitignore"/>
+    <linkfile src="tools/publish.sh" dest="dey5.0/publish.sh"/>
+  </project>
+
+</manifest>
