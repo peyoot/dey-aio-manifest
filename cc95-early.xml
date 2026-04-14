@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-1、在内网机器的 ~/.gitconfig 中添加.gitconfig的内容，或是直接把本代码库的.gitconfig复制到用户目录下。
+使用项目的.gitconfig,方法一：
+1、 repo init之后，复制一份.gitconfig到根目录 cp .repo/manifests/.gitconfig ./
+2、在内网机器的 ~/.gitconfig 中添加使用includeif
+[includeIf "gitdir:你的项目路径/"]
+    path = 你的项目路径/.gitconfig
+比如：
+[url "https://git.eccee.com/Digi/"]
+    insteadOf = https://github.com/digi-embedded/
+
+方法二： 直接复制一份全局.gitconfig到项目目录下，再把把本代码库的.gitconfig内容添加上。
+
 效果：repo sync 时，所有 GitHub HTTPS 自动替换为 Eccee的源 SSH（e.g., https://github.com/digi-embedded/meta-digi.git → https://git.eccee.com/Digi/meta-digi）。
 从而获取未推送到github上的分支
 
