@@ -57,7 +57,7 @@
   </project>
 
   <!-- Include internal overrides from subdir for Stash SSH and upstream revisions -->
-  <include name="local_manifests/internal-overrides.xml" />
+  <!-- include name="local_manifests/internal-overrides.xml" / -->
 
 </manifest>
 
