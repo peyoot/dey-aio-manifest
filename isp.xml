@@ -66,4 +66,7 @@ DIGI_INTERNAL_GIT ?= "1"
     <linkfile src="tools/publish.sh" dest="dey5.0/publish.sh"/>
   </project>
 
+  <!-- Include internal overrides from subdir for Stash SSH and upstream revisions -->
+  <!-- include name="local_manifests/internal-overrides.xml" / -->
+
 </manifest>
