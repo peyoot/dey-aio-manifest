@@ -31,6 +31,7 @@ DIGI_INTERNAL_GIT ?= "1"
   <remote name="oe"    fetch="https://git.openembedded.org"/>
   <remote name="yocto" fetch="https://git.yoctoproject.org"/>
   <remote name="peyoot"  fetch="https://github.com/peyoot"/>
+  <remote name="ecceegit"  fetch="https://git.eccee.com/Digi"/>
 
   <!-- 自定义镜像版本包括镜像特性，自定义板卡设备树等，均放在meta-custom中，分支名称依次为<yocto版本>-<Feature说明>-<板卡代号或版本>
   -->
@@ -46,6 +47,7 @@ DIGI_INTERNAL_GIT ?= "1"
   <project name="meta-st-stm32mp.git" path="dey5.0/sources/meta-st-stm32mp" remote="stm" revision="scarthgap"/>
   <project name="meta-st-x-linux-ai.git" path="dey5.0/sources/meta-st-x-linux-ai" remote="stm" revision="fae1c3bcad05f338da80e69fc150b8697ad874c5"/>
   <project name="meta-st-x-linux-isp.git" path="dey5.0/sources/meta-st-x-linux-isp" remote="stm" revision="abuzarra/dey-5.0/master_DEL-9890_add_support_x_linux_isp_ccmp2_12012026"/>
+  <project name="meta-st-x-linux-isp.git" path="dey5.0/sources/meta-st-x-linux-isp" remote="stm" revision="36d6caacc9978c7d78b8b68a3f958850d8614138"/>
   <project name="meta-openembedded.git" path="dey5.0/sources/meta-openembedded" remote="oe" revision="scarthgap"/>
   <project name="meta-qt5.git" path="dey5.0/sources/meta-qt5" remote="qt5" revision="scarthgap"/>
   <project name="meta-qt6.git" path="dey5.0/sources/meta-qt6" remote="qt6" revision="6.8"/>
@@ -57,7 +59,7 @@ DIGI_INTERNAL_GIT ?= "1"
   <project name="meta-wolfssl.git" path="dey5.0/sources/meta-wolfssl" remote="wlf" revision="master"/>
   <project name="poky.git" path="dey5.0/sources/poky" remote="yocto" revision="scarthgap"/>
 
-  <project name="dey-aio.git" path="aio/scarthgap" remote="peyoot" revision="scarthgap">
+  <project name="dey-aio.git" path="aio/scarthgap" remote="peyoot" revision="scarthgap-isp">
     <linkfile src="mkproject.sh" dest="dey5.0/mkproject.sh"/>
     <linkfile src="docker-compose.yml" dest="dey5.0/docker-compose.yml"/>
     <copyfile src="workspace/.gitignore" dest="dey5.0/workspace/.gitignore"/>
