@@ -41,7 +41,7 @@ DIGI_INTERNAL_GIT ?= "1"
   <project name="meta-browser.git" path="dey5.0/sources/meta-browser" remote="browser" revision="f988d616d37ddf160d3d747ed54d0a66d549f499"/>
   <project name="meta-clang.git" path="dey5.0/sources/meta-clang" remote="clang" revision="scarthgap"/>
   <project name="meta-flutter.git" path="dey5.0/sources/meta-flutter" remote="flutter" revision="scarthgap"/>
-  <project name="meta-digi.git" path="dey5.0/sources/meta-digi" remote="ecceegit" revision="de852f317d711486e7d5f615cface46fe3557e15"/>
+  <project name="meta-digi.git" path="dey5.0/sources/meta-digi" remote="ecceegit" revision="d9e2154ddcb135cb7754bad9251bbb4afb228ad6"/>
   <project name="meta-freescale.git" path="dey5.0/sources/meta-freescale" remote="yocto" revision="scarthgap"/>
   <project name="meta-fsl-demos.git" path="dey5.0/sources/meta-fsl-demos" remote="fsl" revision="scarthgap"/>
   <project name="meta-imx.git" path="dey5.0/sources/meta-imx" remote="nxp" revision="scarthgap-6.6.52-2.2.1"/>
