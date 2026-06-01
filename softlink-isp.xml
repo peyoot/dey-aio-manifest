@@ -40,13 +40,12 @@ DIGI_INTERNAL_GIT ?= "1"
   <project name="meta-browser.git" path="dey5.0/sources/meta-browser" remote="browser" revision="f988d616d37ddf160d3d747ed54d0a66d549f499"/>
   <project name="meta-clang.git" path="dey5.0/sources/meta-clang" remote="clang" revision="scarthgap"/>
   <project name="meta-flutter.git" path="dey5.0/sources/meta-flutter" remote="flutter" revision="scarthgap"/>
-  <project name="meta-digi.git" path="dey5.0/sources/meta-digi" remote="ecceegit" revision="e91342729507b822ffb705e5aa415611b5deb369"/>
+  <project name="meta-digi.git" path="dey5.0/sources/meta-digi" remote="ecceegit" revision="5b18593bfdb605027fd7fe0f7b4707f2098acacf"/>
   <project name="meta-freescale.git" path="dey5.0/sources/meta-freescale" remote="yocto" revision="scarthgap"/>
   <project name="meta-fsl-demos.git" path="dey5.0/sources/meta-fsl-demos" remote="fsl" revision="scarthgap"/>
   <project name="meta-imx.git" path="dey5.0/sources/meta-imx" remote="nxp" revision="scarthgap-6.6.52-2.2.1"/>
-  <project name="meta-st-stm32mp.git" path="dey5.0/sources/meta-st-stm32mp" remote="stm" revision="scarthgap"/>
-  <project name="meta-st-x-linux-ai.git" path="dey5.0/sources/meta-st-x-linux-ai" remote="stm" revision="fae1c3bcad05f338da80e69fc150b8697ad874c5"/>
-  <project name="meta-st-x-linux-isp.git" path="dey5.0/sources/meta-st-x-linux-isp" remote="stm" revision="abuzarra/dey-5.0/master_DEL-9890_add_support_x_linux_isp_ccmp2_12012026"/>
+  <project name="meta-st-stm32mp.git" path="dey5.0/sources/meta-st-stm32mp" remote="stm" revision="fae1c3bcad05f338da80e69fc150b8697ad874c5"/>
+  <project name="meta-st-x-linux-ai.git" path="dey5.0/sources/meta-st-x-linux-ai" remote="stm" revision="6813080f1bb326793950c5a3ae02a3fd59a94f28"/>
   <project name="meta-st-x-linux-isp.git" path="dey5.0/sources/meta-st-x-linux-isp" remote="stm" revision="36d6caacc9978c7d78b8b68a3f958850d8614138"/>
   <project name="meta-openembedded.git" path="dey5.0/sources/meta-openembedded" remote="oe" revision="scarthgap"/>
   <project name="meta-qt5.git" path="dey5.0/sources/meta-qt5" remote="qt5" revision="scarthgap"/>
