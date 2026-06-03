@@ -39,14 +39,15 @@ DIGI_INTERNAL_GIT ?= "1"
   <project name="meta-digi.git" path="dey5.0/sources/meta-digi" remote="digi" revision="scarthgap"/>
   <project name="meta-freescale.git" path="dey5.0/sources/meta-freescale" remote="yocto" revision="scarthgap"/>
   <project name="meta-fsl-demos.git" path="dey5.0/sources/meta-fsl-demos" remote="fsl" revision="scarthgap"/>
-  <project name="meta-imx.git" path="dey5.0/sources/meta-imx" remote="nxp" revision="scarthgap-6.6.52-2.2.1"/>
-  <project name="meta-st-stm32mp.git" path="dey5.0/sources/meta-st-stm32mp" remote="stm" revision="fae1c3bcad05f338da80e69fc150b8697ad874c5"/>
-  <project name="meta-st-x-linux-ai.git" path="dey5.0/sources/meta-st-x-linux-ai" remote="stm" revision="6813080f1bb326793950c5a3ae02a3fd59a94f28"/>
+  <project name="meta-imx.git" path="dey5.0/sources/meta-imx" remote="nxp" revision="scarthgap-6.6.52-2.2.2"/>
+  <project name="meta-st-stm32mp.git" path="dey5.0/sources/meta-st-stm32mp" remote="stm" revision="scarthgap"/>
+  <project name="meta-st-x-linux-ai.git" path="dey5.0/sources/meta-st-x-linux-ai" remote="stm" revision="scarthgap"/>
+  <project name="meta-st-x-linux-isp.git" path="dey5.0/sources/meta-st-x-linux-isp" remote="stm" revision="scarthgap"/>
   <project name="meta-openembedded.git" path="dey5.0/sources/meta-openembedded" remote="oe" revision="scarthgap"/>
   <project name="meta-qt5.git" path="dey5.0/sources/meta-qt5" remote="qt5" revision="scarthgap"/>
   <project name="meta-qt6.git" path="dey5.0/sources/meta-qt6" remote="qt6" revision="6.8"/>
   <project name="meta-selinux.git" path="dey5.0/sources/meta-selinux" remote="yocto" revision="scarthgap"/>
-  <project name="meta-swupdate.git" path="dey5.0/sources/meta-swupdate" remote="swu" revision="43ef322cbf5b91d84b007c343cf73e9b01699594"/>
+  <project name="meta-swupdate.git" path="dey5.0/sources/meta-swupdate" remote="swu" revision="75385905a7deecaedb7be8b90141bc96df18b461"/>
   <project name="meta-timesys.git" path="dey5.0/sources/meta-timesys" remote="timesys" revision="scarthgap"/>
   <project name="meta-virtualization.git" path="dey5.0/sources/meta-virtualization" remote="yocto" revision="scarthgap"/>
   <project name="meta-webkit.git" path="dey5.0/sources/meta-webkit" remote="igl" revision="scarthgap"/>
